@@ -1,0 +1,86 @@
+/ reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+	/* From el figma de Adrian */
+  --primary-color1: #BE0016;
+  --primary-color2: #790C18;
+  --primary-color3: #E54658;
+
+  --secondary-color1: #FFF1C4; /* Beige */
+  --secondary-color2: #161414; /* Gris oscuro */
+
+  --button-color-claro: #BE0016; /*oscuro para el modo claro: primary-color1*/
+  --button-color-oscuro:  #FF8B8B; /*claro para el modo oscuro: color-posiblemente2 */
+  --button-color-activado-claro: #790C18; /*para el modo claro, buton activado: primary-color2 (antés: azul oscuro) */
+  --button-color-activado-oscuro: #FF1111; /*para el modo oscuro, buton activado: color-posiblemente1 */
+  --button-color-hover-claro: #E54658; /*para el modo claro, buton hovered: primary-color3 */
+  --button-color-hover-oscuro: #FF0000; /*para el modo oscuro, buton activado: color-posiblemente3 */
+
+  --text-color-claro: #161414; /*oscuro para el modo claro: secondary-color2: Gris oscuro */
+  --background-color-claro: #90B8F3; /* Azul claro: color "posiblamente6" de Figma */
+
+  --text-color-oscuro: #FFF1C4; /*claro para el modo oscuro: secondary-color1: Beige */
+  --background-color-oscuro: #20538F; /* Azul oscuro: color "posiblamente4" de Figma */
+  
+  /* --paragraph: #7D7987;
+  --link-color: #1F1534; */
+}
+
+
+/* -> modo claro */
+.claro body {
+color: var(--text-color-claro);  /* antés: #121212; */
+background-color: var(--background-color-claro);  /*antés:  #90B8F3; */
+}
+/* -> modo oscuro */
+.oscuro body {
+color: var(--text-color-oscuro);  /*antés:  #FFF; */
+background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
+}
+
+
+iframe {
+	height: 100%;
+		/*scrolling: no;
+		frameborder: 0;*/
+}
+
+#content {
+	height: 100%;
+	border: 0;
+	width="800";
+	height=auto;
+	frameborder="0";
+	scrolling="no";
+}
+
+h1 {
+	 /* TODO */
+	color: green;
+	background-color: #3084E7;
+	text-align: center;
+}
+
+.claro .servicio-card p {
+	background-color: #3084E7;
+}
+.oscuro .servicio-card p {
+	background-color: #90B8F3;
+}
+
+.claro .servicio-card h2 {
+	background-color: #121212; /* gris oscuro */
+	color: white;
+}
+
+.oscuro .servicio-card h2 {
+	background-color: white;
+	color: #121212; /* gris oscuro */
+}
