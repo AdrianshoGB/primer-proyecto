@@ -1,0 +1,110 @@
+:root {
+	/* From el figma de Adrian */
+  --primary-color1: #BE0016;
+  --primary-color2: #790C18;
+  --primary-color3: #E54658;
+
+  --secondary-color1: #FFF1C4; /* Beige */
+  --secondary-color2: #161414; /* Gris oscuro */
+
+  --button-color-claro: #BE0016; /*oscuro para el modo claro: primary-color1*/
+  --button-color-oscuro:  #FF8B8B; /*claro para el modo oscuro: color-posiblemente2 */
+  --button-color-activado-claro: #790C18; /*para el modo claro, buton activado: primary-color2 (antés: azul oscuro) */
+  --button-color-activado-oscuro: #FF1111; /*para el modo oscuro, buton activado: color-posiblemente1 */
+  --button-color-hover-claro: #E54658; /*para el modo claro, buton hovered: primary-color3 */
+  --button-color-hover-oscuro: #FF0000; /*para el modo oscuro, buton activado: color-posiblemente3 */
+
+  --text-color-claro: #161414; /*oscuro para el modo claro: secondary-color2: Gris oscuro */
+  --background-color-claro: #90B8F3; /* Azul claro: color "posiblamente6" de Figma */
+
+  --text-color-oscuro: #FFF1C4; /*claro para el modo oscuro: secondary-color1: Beige */
+  --background-color-oscuro: #20538F; /* Azul oscuro: color "posiblamente4" de Figma */
+  
+  /* --paragraph: #7D7987;
+  --link-color: #1F1534; */
+}
+
+
+/* -> modo claro */
+.claro body {
+color: var(--text-color-claro);  /* antés: #121212; */
+background-color: var(--background-color-claro);  /*antés:  #90B8F3; */
+}
+/* -> modo oscuro */
+.oscuro body {
+color: var(--text-color-oscuro);  /*antés:  #FFF; */
+background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
+}
+
+/*.main_menu{margin:0px;padding:0px;list-style:none;}
+
+.claro .main_menu button{display:inline-block;vertical-align:top;margin:0px 3px;background:#b02b3c;transition:all .2s;position:relative;border-radius:3px;overflow:hidden;box-shadow:inset 0px -2px 0px rgba(0,0,0,.2);}
+.oscuro .main_menu button{display:inline-block;vertical-align:top;margin:0px 3px;background:#20538F;transition:all .2s;position:relative;border-radius:3px;overflow:hidden;box-shadow:inset 0px -2px 0px rgba(0,0,0,.2);}
+
+.main_menu button{display:block;font-size:14px;color:#fff;line-height:35px;padding:0px 12px 0px 10px;text-transform:uppercase;position:relative;}
+.main_menu button i{margin-right:3px;}
+*/
+
+/*
+.claro .main_menu button{ background:#b02b3c;box-shadow:inset 0px -2px 0px rgba(0,0,0,.2);}
+.oscuro .main_menu button{ background:#20538F;box-shadow:inset 0px -2px 0px rgba(0,0,0,.2);}
+*/
+
+/* Botones */
+.claro boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-color-oscuro);
+}
+
+.oscuro boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-color-claro);
+}
+
+/* Como se manejan los estados activado/hover? */
+.claro .activado boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-activado-color-oscuro);
+}
+
+.oscuro .activado boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-activado-color-claro);
+}
+
+.claro .hover boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-hover-color-oscuro);
+}
+
+.oscuro .hover boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-hover-color-claro);
+}
+
+/*
+.claro .main_menu li::before{
+	background:#20538f;
+	content:'';
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#20538f;
+	width:100%;
+	height:0px;
+	transition:all .3s;
+	box-shadow:inset 0px -2px 0px rgba(0,0,0,.2);
+}
+.oscuro .main_menu li::before{
+	background:#b02b3c;
+	content:'';
+	position:absolute;
+	left:0px;bottom:0px;
+	width:100%;
+	height:0px;
+	transition:all .3s;
+	box-shadow:inset 0px -2px 0px rgba(255, 255, 255,.2);
+}*/
+
+.main_menu li:hover::before{height:100%;}
+.main_menu li.se::before{height:100%;}
