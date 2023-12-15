@@ -23,43 +23,76 @@
 				<img id="cristauro-logo" src="./assets/img/Otros/CrisTauro.png" alt="Logo de Cristauro"/>
 			</div>
 		</div>
-	<div class="row">
-		<nav>
-			<ul class="menu">
-			<!--div class="btn-group claro" -->
+		<!--appear when small -->
+		<div class="col-sm-3 d-s-block d-m-none d-xl-none">
+			<nav>
+			<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
+
+			<ul class="sub-menu">
 				<li class="navigation-list">
-					<a class="menu-link btn btn-primary claro" type="button"
+					<a class="menu-link claro" type="button"
 						href="./inicio.htm" alt="Boton inicio">Inicio</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+					<a class="menu-link claro" type="button"
+						href="./nosotros.htm">Nosotros</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./servicios.htm" alt="Boton servicios">Servicios</a>
+					<a class="menu-link claro" type="button"
+						href="./servicios.htm">Servicios</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./productos.htm" alt="Boton productos">Productos</a>
+					<a class="menu-link claro" type="button"
+						href="./productos.htm>Productos</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./contacto.htm" alt="Boton contacto">Contacto</a>
+					<a class="menu-link claro" type="button"
+						href="./contacto.htm">Contacto</a>
 				</li>
 			</ul>
-		</nav>
-		<div>
-			<!-- Boton para cambiar el modo oscuro-claro -->
-			<!--label for="darkmodeswitch">Modo oscuro</label>
-			<input type="checkbox" id="darkmodeswitch" />
-			<script type="text/javascript" src="./javascript/Menu.js" ></script>	
-			<script type="text/javascript">
-				window.currBoton = "";
-				window.darkmodeswitch = document.getElementById("darkmodeswitch");
-				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
-			</script-->
+			</nav>
 		</div>
+	<!-- disappears when small -->
+	<div class="col-sm-12 d-none d-m-block d-lg-block">
+		<!--div class="row"-->
+			<nav class="container">
+				
+				<ul class="menu">
+				<!--div class="btn-group claro" -->
+					<li class="navigation-list">
+						<a class="menu-link btn btn-primary claro" type="button"
+							href="./inicio.htm" alt="Boton inicio">Inicio</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./servicios.htm" alt="Boton servicios">Servicios</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./productos.htm" alt="Boton productos">Productos</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./contacto.htm" alt="Boton contacto">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+			<div>
+				<!-- Boton para cambiar el modo oscuro-claro -->
+				<!--label for="darkmodeswitch">Modo oscuro</label>
+				<input type="checkbox" id="darkmodeswitch" />
+				<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+				<script type="text/javascript">
+					window.currBoton = "";
+					window.darkmodeswitch = document.getElementById("darkmodeswitch");
+					window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
+				</script-->
+			</div>
+		<!--/div-->
 	</div>
 	</div>
 </header>

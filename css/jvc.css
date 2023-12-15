@@ -100,6 +100,10 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
 	color: #121212; /* gris oscuro */
 }
 
+.img-menu-movil {
+    width: 30%;
+}
+
 .navigation-list{
     padding-top: 10px;
     margin-top: 0px;
@@ -107,30 +111,41 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
     padding-right: 6px;
 }
 
-/* Colors for the menu's text; TODO: update colors */
-/*a.menu-link:link claro{
-    color: blue;
+.centered{
+    justify-content: center;
 }
-a.menu-link:visited claro{
-    color: purple;
-}
-a.menu-link:hover claro{
-    color: goldenrod;
-}
-a.menu-link:active claro{
-    color: darkgreen;
-}*/
-
-.menu {
+.menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    list-style-type:none; /* no bullet */
+    list-style-type: none;
     padding-top: 10px;
     margin-top: 0px;
     padding-left: 0px;
     margin-left: 0px;
+}
+
+.menu-movil {
+    display: none;
+}
+.menu-movil .show {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;    
+}
+.sub-menu li {
+    display: none;
+}
+#sub-menu-categ:hover .sub-menu {
+    display: block;
+}
+#sub-menu-categ:hover .sub-menu li{
+    display: block;
 }
 
 .navigation-list{
