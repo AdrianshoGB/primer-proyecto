@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1"> 
 <title>Comercial &amp; Industrial S.A.C. : Servicios</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-	<!-- TODO -->
+
+<link type="text/css" rel="stylesheet" href="./css/jvc.css">
+<link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
 </head>
 
-<body>
-<link type="text/css" rel="stylesheet" href="./css/jvc.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap@5.0.2/css/bootstrap.min.css">
+<body class="claro">
+	<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
+	<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./javascript/Menu.js" ></script>	
 
-	<script type="text/javascript" src="./javascript/UpdateDark.js" />
-	<script type="text/javascript" src="./javascript/MenuDefer.js" />
-	<script type="text/javascript">
-        windowOnLoad();
-		resizeIFrame();
-		/*window.onload = function (e) {
-			windowOnLoad();
-			resizeIFrame();
-		};*/ /*windowOnLoad();
-		alert("Before resizeIFrame");
-		resizeIFrame();
-		alert("After resizeIFrame");*/
-	</script>
+<header class="claro">
+	<div class="row">
+		<nav>
+			<ul class="menu">
+			<!--div class="btn-group claro" -->
+				<li class="navigation-list">
+					<a class="menu-link btn btn-primary claro" type="button"
+						href="./inicio.htm" alt="Boton inicio">Inicio</a>
+				</li>
+				<li class="navigation-list">
+					<a class="btn btn-primary menu-link claro" type="button"
+						href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+				</li>
+				<li class="navigation-list">
+					<a class="btn btn-primary menu-link claro" type="button"
+						href="./servicios.htm" alt="Boton servicios">Servicios</a>
+				</li>
+				<li class="navigation-list">
+					<a class="btn btn-primary menu-link claro" type="button"
+						href="./productos.htm" alt="Boton productos">Productos</a>
+				</li>
+				<li class="navigation-list">
+					<a class="btn btn-primary menu-link claro" type="button"
+						href="./contacto.htm" alt="Boton contacto">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+		<div>
+			<!-- Boton para cambiar el modo oscuro-claro -->
+			<!--label for="darkmodeswitch">Modo oscuro</label>
+			<input type="checkbox" id="darkmodeswitch" />
+			<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+			<script type="text/javascript">
+				window.currBoton = "";
+				window.darkmodeswitch = document.getElementById("darkmodeswitch");
+				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
+			</script-->
+		</div>
+	</div>
+</header>
 
+<main class="claro">
 <!--<base href="https://industriajvcsac.com/">-->
 <h1>NUESTROS SERVICIOS</h1>
 
@@ -74,11 +106,15 @@ correspondiente con el fin de evitar accidentes laborales.
 		</div>
 	</div>
 </div>
+</main>
 
-<footer>
-	<iframe  width="100%" height="100%" frameborder="0"
+<footer class="claro">
+	<!--iframe  width="100%" height="100%" frameborder="0"
 		src="./common_footer.htm" allowfullscreen="true">
-	</iframe>
+	</iframe-->
+	<div>
+		<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
+	</div>
 </footer>
 
 </body></html>
