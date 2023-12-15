@@ -61,9 +61,8 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
 }
 
 h1 {
-	 /* TODO */
-	color: green;
-	background-color: #3084E7;
+	/*color: green;
+	background-color: #3084E7;*/
 	text-align: center;
 }
 
@@ -126,6 +125,7 @@ a.menu-link:active claro{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type:none; /* no bullet */
     padding-top: 10px;
     margin-top: 0px;
@@ -170,4 +170,17 @@ background-color: var(--button-hover-color-oscuro);
 .oscuro .hover boton_main_menu {
 color: var(--text-color-oscuro);
 background-color: var(--button-hover-color-claro);
+}
+
+.logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#jvc-logo{
+	width:20.5%;
+}
+#cristauro-logo{
+	width:7.27%;
 }
