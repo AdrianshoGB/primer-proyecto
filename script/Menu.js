@@ -54,7 +54,7 @@ function darkModeSwitchChanged() {
     updateDarkModeClass(darkmodeswitch)
     /* To inform the iframe of the change
     (let it reparse the parameter; calling onload directly on the iframe doesn't work) */
-    if (window.currBoton !== "") {
+    /*if (window.currBoton !== "") {
         switch (window.currBoton) {
         case "btn_ini": setTarget("./inicio.htm", window.currBoton);
             break;
@@ -71,7 +71,7 @@ function darkModeSwitchChanged() {
         case "btn_cont": setTarget("./contacto.htm", window.currBoton);
             break;
         }
-    }
+    }*/
 }
 
 /*

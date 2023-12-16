@@ -1,4 +1,4 @@
-/ reset */
+/* reset */
 * {
   padding: 0;
   margin: 0;
@@ -46,26 +46,41 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
 }
 
 
-iframe {
+/*iframe {
 	height: 100%;
-		/*scrolling: no;
-		frameborder: 0;*/
 }
+*/
 
 #content {
 	height: 100%;
 	border: 0;
-	width="800";
-	height=auto;
-	frameborder="0";
-	scrolling="no";
+	width:"800";
+	height:auto;
+	/*frameborder:0;
+	scrolling:"no";*/
 }
 
 h1 {
-	 /* TODO */
-	color: green;
-	background-color: #3084E7;
+	/*color: green;
+	background-color: #3084E7;*/
 	text-align: center;
+}
+
+/*.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+
+/* -> modo claro */
+.claro body {
+color: var(--text-color-claro);  /* antés: #121212; */
+background-color: var(--background-color-claro);  /*antés:  #90B8F3; */
+}
+/* -> modo oscuro */
+.oscuro body {
+color: var(--text-color-oscuro);  /*antés:  #FFF; */
+background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
 }
 
 .claro .servicio-card p {
@@ -83,4 +98,104 @@ h1 {
 .oscuro .servicio-card h2 {
 	background-color: white;
 	color: #121212; /* gris oscuro */
+}
+
+.img-menu-movil {
+    width: 30%;
+}
+
+.navigation-list{
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-left: 40px;
+    padding-right: 6px;
+}
+
+.centered{
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.menu-movil {
+    display: none;
+}
+.menu-movil .show {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;    
+}
+.sub-menu li {
+    display: none;
+}
+#sub-menu-categ:hover .sub-menu {
+    display: block;
+}
+#sub-menu-categ:hover .sub-menu li{
+    display: block;
+}
+
+.navigation-list{
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-left: 40px;
+    padding-right: 6px;
+}
+
+/* Botones */
+.claro boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-color-oscuro);
+}
+
+.oscuro boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-color-claro);
+}
+
+/* Como se manejan los estados activado/hover? */
+.claro .activado boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-activado-color-oscuro);
+}
+
+.oscuro .activado boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-activado-color-claro);
+}
+
+.claro .hover boton_main_menu {
+color: var(--text-color-claro);
+background-color: var(--button-hover-color-oscuro);
+}
+
+.oscuro .hover boton_main_menu {
+color: var(--text-color-oscuro);
+background-color: var(--button-hover-color-claro);
+}
+
+.logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#jvc-logo{
+	width:30.0%;
+}
+#cristauro-logo{
+	width:10.0%;
 }
