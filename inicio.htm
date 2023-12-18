@@ -31,37 +31,37 @@
 
 			<ul class="sub-menu">
 				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
+					<a class="boton_main_menu claro"
 						href="./inicio.htm" alt="Boton inicio">Inicio</a>
 				</li>
 				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
+					<a class="boton_main_menu claro"
 						href="./nosotros.htm">Nosotros</a>
 				</li>
 				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
+					<a class="boton_main_menu claro"
 						href="./servicios.htm">Servicios</a>
 				</li>
 				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./productos.htm>Productos</a>
+					<a class="boton_main_menu claro"
+						href="./productos.htm">Productos</a>
 				</li>
 				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
+					<a class="boton_main_menu claro"
 						href="./contacto.htm">Contacto</a>
 				</li>
 			</ul>
 			</nav>
 		<!--div-->
 			<!-- Boton para cambiar el modo oscuro-claro -->
-			<!--label for="darkmodeswitch">Modo oscuro</label>
+			<label for="darkmodeswitch">Modo oscuro</label>
 			<input type="checkbox" id="darkmodeswitch" />
-			<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+			<script type="text/javascript" src="./script/Menu.js" ></script>	
 			<script type="text/javascript">
 				window.currBoton = "";
 				window.darkmodeswitch = document.getElementById("darkmodeswitch");
 				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
-			</script-->
+			</script>
 		</div>
 	<!-- disappears when small -->
 	<div class="col-sm-12 d-none d-s-none d-md-block">
@@ -71,23 +71,23 @@
 				<ul class="menu">
 				<!--div class="btn-group claro" -->
 					<li class="navigation-list">
-						<a class="menu-link btn btn-primary claro" type="button"
+						<a class="btn btn-primary boton_main_menu claro" type="button"
 							href="./inicio.htm" alt="Boton inicio">Inicio</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
+						<a class="btn btn-primary boton_main_menu claro" type="button"
 							href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
+						<a class="btn btn-primary boton_main_menu claro" type="button"
 							href="./servicios.htm" alt="Boton servicios">Servicios</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
+						<a class="btn btn-primary boton_main_menu claro" type="button"
 							href="./productos.htm" alt="Boton productos">Productos</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
+						<a class="btn btn-primary boton_main_menu claro" type="button"
 							href="./contacto.htm" alt="Boton contacto">Contacto</a>
 					</li>
 				</ul>
@@ -112,7 +112,7 @@
 	<div class="container-fluid">
 
 	<!--<base href="https://industriajvcsac.com/">--><base href=".">
-	<h1>INICIO</h1>
+	<h1>Inicio</h1>
 		<section>
 			<article class = "row">
 				<img  src="./assets/img/Sliders/slider-1568138981.jpg" alt="TODO"/>
@@ -137,6 +137,12 @@
 		</section>
 		<section container text-center my-3> <!-- TODO: class-->
 			<article>
+				<!-- try to change the shape of the button...
+				cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
+				2 steps:
+				- make it work
+				- change the shape
+				-->
 				<a href="#" class="button ribbon-outset border">&iexcl;Offerta de la semana!</a>
 			</article>
 			

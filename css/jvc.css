@@ -37,7 +37,7 @@
 /* -> modo claro */
 .claro body {
     color: var(--text-color-claro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-image: url("../assets/img/Otros/ILwMb87.png"); /* no functiona??? */
     background-color: var(--background-color-claro);
 }/* -> modo claro */
 
@@ -51,7 +51,7 @@
 /* -> modo claro */
 .claro main{
     color: var(--text-color-claro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-image: url("../assets/img/Otros/ILwMb87.png"); /* functiona */
     background-color: var(--background-color-claro);
 }/* -> modo claro */
 
@@ -62,24 +62,13 @@
     background-color: var(--background-color-oscuro);
 }
 
-/*iframe {
-	height: 100%;
-}
-*/
-
-#content {
-	height: 100%;
-	border: 0;
-	width:"800";
-	height:auto;
-	/*frameborder:0;
-	scrolling:"no";*/
-}
-
 h1 {
-	/*color: green;
-	background-color: #3084E7;*/
 	text-align: center;
+    text-transform:uppercase;
+}
+
+h2 {
+    text-transform:uppercase;
 }
 
 .claro .servicio-card p {
@@ -221,10 +210,6 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
 .button.border:hover {
 background:#e04e5e;
 color:#fff;
-}
-
-h2 {
-    text-transform:uppercase;
 }
 
 /* Button Ribbon-Outset Border Style */
