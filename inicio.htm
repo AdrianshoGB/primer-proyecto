@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
 </head>
 
+<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
+<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
+<script type="text/javascript" src="./javascript/jvc.js" ></script>	
+
 <body class="claro">
-	<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
-	<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./javascript/jvc.js" ></script>	
 
 <header class="claro">
 	<div class="container-fluid">
@@ -23,33 +24,35 @@
 				<img id="cristauro-logo" src="./assets/img/Otros/CrisTauro.png" alt="Logo de Cristauro"/>
 			</div>
 		</div>
-	<div class="row">
-		<nav>
-			<ul class="menu">
-			<!--div class="btn-group claro" -->
+		<!--visible when small -->
+		<div class="col-sm-3 d-none d-sm-block d-md-none">
+			<nav>
+			<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
+
+			<ul class="sub-menu">
 				<li class="navigation-list">
-					<a class="menu-link btn btn-primary claro" type="button"
+					<a class="menu-link claro" type="button"
 						href="./inicio.htm" alt="Boton inicio">Inicio</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+					<a class="menu-link claro" type="button"
+						href="./nosotros.htm">Nosotros</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./servicios.htm" alt="Boton servicios">Servicios</a>
+					<a class="menu-link claro" type="button"
+						href="./servicios.htm">Servicios</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./productos.htm" alt="Boton productos">Productos</a>
+					<a class="menu-link claro" type="button"
+						href="./productos.htm>Productos</a>
 				</li>
 				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./contacto.htm" alt="Boton contacto">Contacto</a>
+					<a class="menu-link claro" type="button"
+						href="./contacto.htm">Contacto</a>
 				</li>
 			</ul>
-		</nav>
-		<div>
+			</nav>
+		<!--div-->
 			<!-- Boton para cambiar el modo oscuro-claro -->
 			<!--label for="darkmodeswitch">Modo oscuro</label>
 			<input type="checkbox" id="darkmodeswitch" />
@@ -60,21 +63,210 @@
 				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
 			</script-->
 		</div>
+	<!-- disappears when small -->
+	<div class="col-sm-12 d-none d-s-none d-md-block">
+		<!--div class="row"-->
+			<nav class="container">
+				
+				<ul class="menu">
+				<!--div class="btn-group claro" -->
+					<li class="navigation-list">
+						<a class="menu-link btn btn-primary claro" type="button"
+							href="./inicio.htm" alt="Boton inicio">Inicio</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./servicios.htm" alt="Boton servicios">Servicios</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./productos.htm" alt="Boton productos">Productos</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary menu-link claro" type="button"
+							href="./contacto.htm" alt="Boton contacto">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+			<div>
+				<!-- Boton para cambiar el modo oscuro-claro -->
+				<!--label for="darkmodeswitch">Modo oscuro</label>
+				<input type="checkbox" id="darkmodeswitch" />
+				<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+				<script type="text/javascript">
+					window.currBoton = "";
+					window.darkmodeswitch = document.getElementById("darkmodeswitch");
+					window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
+				</script-->
+			</div>
+		<!--/div-->
 	</div>
 	</div>
 </header>
 
 <main class="claro">
-<div class="container-fluid">
+	<div class="container-fluid">
 
-<!--<base href="https://industriajvcsac.com/">--><base href=".">
-<h1>INICIO</h1>
-</div>
+	<!--<base href="https://industriajvcsac.com/">--><base href=".">
+	<h1>INICIO</h1>
+		<section>
+			<article class = "row">
+				<img  src="./assets/img/Sliders/slider-1568138981.jpg" alt="TODO"/>
+			</article>
+			<article class = "row">
+				<img  src="./assets/img/Sliders/slider-1567791710.jpg" alt="TODO"/>
+			</article>
+		</section>
+		<section class="huge-button"> <!-- TODO: class-->
+			<article>
+				COMERCIAL &amp; INDUSTRIAL JVC SAC -<br>
+				TECNOLOGÍA EN EQUIPOS DE LIMPIEZA INDUSTRIAL
+			</article>
+			<article>
+				SOMOS UNA EMPRESA PERUANA DEDICADA  AL RUBRO DE LA
+				LIMPIEZA DEL SECTOR INDUSTRIAL Y HOGAREÑO DONDE GRACIAS
+				A LA PREFERENCIA DENUESTROS CLIENTES Y BASANDONOS EN
+				NUESTRA ETICA DE VALORES Y PRINCIPIOS “TRANSPARENCIA Y
+				HONESTIDAD” NOS HEMOS CONSOLIDADO COMO UNA EMPRESA
+				SERIA Y CON UN INDICE ALTO DE CRECIMIENTO EN EL MERCADO
+			</article>
+		</section>
+		<section container text-center my-3> <!-- TODO: class-->
+			<article>
+				<a href="#" class="button ribbon-outset border">&iexcl;Offerta de la semana!</a>
+			</article>
+			
+			<article class="container">
+				<!-- Carousel test
+				<div class="row mx-auto my-auto justify-content-center">
+					<div class="col-xs-12">
+						<div class="carousel-inner" role="listbox">
+							<div id="imgCarouselOfertas" class="carousel slide"
+									data-interval="2000"
+									data-ride="carousel"
+									data-pauqse="hover"
+									data-wrap="true">
+								<ol class="carousel-indicators">
+									<li data-target="#imgCarouselOfertas" data-slide-to="0" class="active"> </li>
+									<li data-target="#imgCarouselOfertas" data-slide-to="1"> </li>
+									<li data-target="#imgCarouselOfertas" data-slide-to="2"> </li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="row">
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 0</p>
+												</div>
+											</div>
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 1</p>
+												</div>
+											</div>
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 2</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 3</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 4</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-xs-4">
+												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
+													alt="Logo"/>
+												<div class="carousel-caption">
+													<p>descr 5</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<a href="#imgCarouselOfertas" class="carousel-control left" data-slide="prev">
+									<span class="glypgicon glyphicon-chevron.left">
+									</span>
+								</a>
+								<a href="#imgCarouselOfertas" class="carousel-control right" data-slide="next">
+									<span class="glypgicon glyphicon-chevron.rightt">
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>-->
+			</article>
+		</section>
+		<section class="offerta">
+			<article>
+				<a href="#" class="button ribbon-outset border">&iexcl;Productos<br>
+					destacatos!</a>
+			</article>
+			<article>
+			</article>
+		</section>
+		<section class="offerta">
+			<article>
+				<h2>Nuestra marca</h2><br>
+Somos fabricantes de las máquinas CRIS-TAURO, asimismo comercializamos las marcas MASTER GOLDS y SPEED POWER.
+En nuestro deseo de ofrecer Productos de Limpieza con Alta Tecnología Digital hemos cerrado un Convenio 
+Internacional que nos reconoce como REPRESENTANTES NACIONALES de las máquinas TVX y NEWTOP.
+			</article>
+		</section>
+
+
+	</div>
 </main>
 
-<footer>
-	<div>
-		<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
+<footer class="claro">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="logos-footer">
+				<img class="marca_logo" src="./assets/img/Otros/nRyCTWc.png" alt="Logo de JVC"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782528.jpg" alt="Logo de Cristauro"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782546.jpg" alt="Logo de ..."/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1555554923.jpg" alt="Logo de TVX"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782566.jpg" alt="Logo de ..."/>
+				<img class="marca_logo" src="./assets/img/Marcas/PYhqQQb.png" alt="Logo de ..."/>
+			</div>
+		</div>
+		<div>
+			<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
+		</div>
 	</div>
 </footer>
+
 </body></html>
