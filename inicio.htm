@@ -8,15 +8,14 @@
 
 <link type="text/css" rel="stylesheet" href="./css/jvc.css">
 <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-</head>
-
 <!--script type="text/javascript" src="./script/UpdateDark.js" /-->
 <script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
 <script type="text/javascript" src="./javascript/jvc.js" ></script>	
 
-<body class="claro">
+</head>
 
-<header class="claro">
+<body class="claro">
+<header>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="logos">
@@ -27,94 +26,96 @@
 		<!--visible when small -->
 		<div class="col-sm-3 d-none d-sm-block d-md-none">
 			<nav>
-			<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
-
-			<ul class="sub-menu">
-				<li class="navigation-list">
-					<a class="boton_main_menu claro"
-						href="./inicio.htm" alt="Boton inicio">Inicio</a>
-				</li>
-				<li class="navigation-list">
-					<a class="boton_main_menu claro"
-						href="./nosotros.htm">Nosotros</a>
-				</li>
-				<li class="navigation-list">
-					<a class="boton_main_menu claro"
-						href="./servicios.htm">Servicios</a>
-				</li>
-				<li class="navigation-list">
-					<a class="boton_main_menu claro"
-						href="./productos.htm">Productos</a>
-				</li>
-				<li class="navigation-list">
-					<a class="boton_main_menu claro"
-						href="./contacto.htm">Contacto</a>
-				</li>
-			</ul>
+				<div class="menu-movil">
+					<!--ul><li id="submenu-movil"-->
+					<div id="submenu-movil" style="border:2px solid orange;">
+						<!--a href="#">Home</a-->
+						<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
+						<ul class="submenu" style="display:block;border:2px solid red;">
+							<li>
+								HELLO
+								<a class="boton_main_menu claro" style="border:2px solid greenyellow;"
+									href="./inicio.htm">Inicio</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./nosotros.htm">Nosotros</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./servicios.htm">Servicios</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./productos.htm">Productos</a>
+							</li>
+							<li class="navigation-list">
+								<a class="boton_main_menu claro"
+									href="./contacto.htm">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		<!--div-->
 			<!-- Boton para cambiar el modo oscuro-claro -->
-			<label for="darkmodeswitch">Modo oscuro</label>
+			<!--label for="darkmodeswitch">Modo oscuro</label>
 			<input type="checkbox" id="darkmodeswitch" />
 			<script type="text/javascript" src="./script/Menu.js" ></script>	
 			<script type="text/javascript">
 				window.currBoton = "";
 				window.darkmodeswitch = document.getElementById("darkmodeswitch");
 				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
-			</script>
+			</script-->
 		</div>
-	<!-- disappears when small -->
-	<div class="col-sm-12 d-none d-s-none d-md-block">
-		<!--div class="row"-->
+		<!-- disappears when small -->
+		<div class="col-sm-12 d-none d-s-none d-md-block">
 			<nav class="container">
 				
 				<ul class="menu">
 				<!--div class="btn-group claro" -->
 					<li class="navigation-list">
-						<a class="btn btn-primary boton_main_menu claro" type="button"
-							href="./inicio.htm" alt="Boton inicio">Inicio</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./inicio.htm">Inicio</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary boton_main_menu claro" type="button"
-							href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./nosotros.htm">Nosotros</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary boton_main_menu claro" type="button"
-							href="./servicios.htm" alt="Boton servicios">Servicios</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./servicios.htm">Servicios</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary boton_main_menu claro" type="button"
-							href="./productos.htm" alt="Boton productos">Productos</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./productos.htm">Productos</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary boton_main_menu claro" type="button"
-							href="./contacto.htm" alt="Boton contacto">Contacto</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./contacto.htm">Contacto</a>
 					</li>
 				</ul>
 			</nav>
-			<div>
+		</div>
 				<!-- Boton para cambiar el modo oscuro-claro -->
 				<!--label for="darkmodeswitch">Modo oscuro</label>
 				<input type="checkbox" id="darkmodeswitch" />
-				<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+				<script type="text/javascript" src="./script/Menu.js" ></script>	
 				<script type="text/javascript">
 					window.currBoton = "";
 					window.darkmodeswitch = document.getElementById("darkmodeswitch");
 					window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
 				</script-->
-			</div>
-		<!--/div-->
-	</div>
+	
 	</div>
 </header>
 
 <main class="claro">
 	<div class="container-fluid">
 
-	<!--<base href="https://industriajvcsac.com/">--><base href=".">
 	<h1>Inicio</h1>
 		<section>
-			<article class = "row">
+			<article class="row">
 				<img  src="./assets/img/Sliders/slider-1568138981.jpg" alt="TODO"/>
 			</article>
 			<article class = "row">
@@ -123,19 +124,19 @@
 		</section>
 		<section class="huge-button"> <!-- TODO: class-->
 			<article>
-				COMERCIAL &amp; INDUSTRIAL JVC SAC -<br>
-				TECNOLOGÍA EN EQUIPOS DE LIMPIEZA INDUSTRIAL
+				COMERCIAL &amp; INDUSTRIAL JVC SAC <br>
+				TECNOLOG&Iacute;A EN EQUIPOS DE LIMPIEZA INDUSTRIAL
 			</article>
 			<article>
 				SOMOS UNA EMPRESA PERUANA DEDICADA  AL RUBRO DE LA
-				LIMPIEZA DEL SECTOR INDUSTRIAL Y HOGAREÑO DONDE GRACIAS
+				LIMPIEZA DEL SECTOR INDUSTRIAL Y HOGARE&Ntilde;O DONDE GRACIAS
 				A LA PREFERENCIA DENUESTROS CLIENTES Y BASANDONOS EN
 				NUESTRA ETICA DE VALORES Y PRINCIPIOS “TRANSPARENCIA Y
 				HONESTIDAD” NOS HEMOS CONSOLIDADO COMO UNA EMPRESA
 				SERIA Y CON UN INDICE ALTO DE CRECIMIENTO EN EL MERCADO
 			</article>
 		</section>
-		<section container text-center my-3> <!-- TODO: class-->
+		<section class="container text-center my-3"> <!-- TODO: class-->
 			<article>
 				<!-- try to change the shape of the button...
 				cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
@@ -247,13 +248,11 @@
 		<section class="offerta">
 			<article>
 				<h2>Nuestra marca</h2><br>
-Somos fabricantes de las máquinas CRIS-TAURO, asimismo comercializamos las marcas MASTER GOLDS y SPEED POWER.
-En nuestro deseo de ofrecer Productos de Limpieza con Alta Tecnología Digital hemos cerrado un Convenio 
-Internacional que nos reconoce como REPRESENTANTES NACIONALES de las máquinas TVX y NEWTOP.
+Somos fabricantes de las m&aacute;quinas CRIS-TAURO, asimismo comercializamos las marcas MASTER GOLDS y SPEED POWER.
+En nuestro deseo de ofrecer Productos de Limpieza con Alta Tecnolog&iacute;a Digital hemos cerrado un Convenio 
+Internacional que nos reconoce como REPRESENTANTES NACIONALES de las m&aacute;quinas TVX y NEWTOP.
 			</article>
 		</section>
-
-
 	</div>
 </main>
 
