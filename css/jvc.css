@@ -16,12 +16,17 @@
   --secondary-color1: #FFF1C4; /* Beige */
   --secondary-color2: #161414; /* Gris oscuro */
 
-  --button-color-claro: #BE0016; /*oscuro para el modo claro: primary-color1*/
-  --button-color-oscuro:  #FF8B8B; /*claro para el modo oscuro: color-posiblemente2 */
+  --button-color-claro: #BE0016;
+  --button-text-color-claro: #FF8B8B;
+
+  --button-color-oscuro: #BE0016; /*primary-color1*/
+  --button-text-color-oscuo:  #FF8B8B;
+
   --button-color-activado-claro: #790C18; /*para el modo claro, buton activado: primary-color2 (antés: azul oscuro) */
   --button-color-activado-oscuro: #FF1111; /*para el modo oscuro, buton activado: color-posiblemente1 */
   --button-color-hover-claro: #E54658; /*para el modo claro, buton hovered: primary-color3 */
   --button-color-hover-oscuro: #FF0000; /*para el modo oscuro, buton activado: color-posiblemente3 */
+
 
   --text-color-claro: #161414; /*oscuro para el modo claro: secondary-color2: Gris oscuro */
   --background-color-claro: #90B8F3; /* Azul claro: color "posiblamente6" de Figma */
@@ -36,51 +41,39 @@
 
 /* -> modo claro */
 .claro body {
-color: var(--text-color-claro);  /* antés: #121212; */
-background-color: var(--background-color-claro);  /*antés:  #90B8F3; */
+    color: var(--text-color-claro);
+    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-color: var(--background-color-claro);
 }
+
 /* -> modo oscuro */
 .oscuro body {
-color: var(--text-color-oscuro);  /*antés:  #FFF; */
-background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
+    color: var(--text-color-oscuro);
+    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-color: var(--background-color-oscuro);
 }
-
-
-/*iframe {
-	height: 100%;
-}
-*/
-
-#content {
-	height: 100%;
-	border: 0;
-	width:"800";
-	height:auto;
-	/*frameborder:0;
-	scrolling:"no";*/
-}
-
-h1 {
-	/*color: green;
-	background-color: #3084E7;*/
-	text-align: center;
-}
-
-/*.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}*/
 
 /* -> modo claro */
-.claro body {
-color: var(--text-color-claro);  /* antés: #121212; */
-background-color: var(--background-color-claro);  /*antés:  #90B8F3; */
-}
+/*.claro main{
+    color: var(--text-color-claro);
+    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-color: var(--background-color-claro);
+}*/
+
 /* -> modo oscuro */
-.oscuro body {
-color: var(--text-color-oscuro);  /*antés:  #FFF; */
-background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
+/*.oscuro main{
+    color: var(--text-color-oscuro);
+    background-image: url("../assets/img/Otros/ILwMb87.png");
+    background-color: var(--background-color-oscuro);
+}*/
+
+h1 {
+	text-align: center;
+    text-transform:uppercase;
+}
+
+h2 {
+    text-transform:uppercase;
 }
 
 .claro .servicio-card p {
@@ -126,25 +119,33 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
     margin-left: 0px;
 }
 
-.menu-movil {
-    display: none;
-}
-.menu-movil .show {
-    display: block;
-}
-.sub-menu {
+.submenu {
     display: none;
     position: absolute;
+    background-color: rgb(82, 1, 82);
+    border: 2px solid white;
     top: 0;
-    left: 100%;    
+    left: 100%;
+    list-style-type: disc;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
-.sub-menu li {
+
+.submenu a {
+    padding: 5px;
+}
+.submenu li {
     display: none;
 }
-#sub-menu-categ:hover .sub-menu {
+#submenu-movil:hover .submenu{
     display: block;
 }
-#sub-menu-categ:hover .sub-menu li{
+#submenu-movil:hover .submenu li{
+    display: block;
+}
+#submenu-movil:hover .submenu li a{
     display: block;
 }
 
@@ -155,35 +156,67 @@ background-color: var(--background-color-oscuro);  /*antés:  #20538F;*/
     padding-right: 6px;
 }
 
-/* Botones */
+/* Botones grandes del menu Desktop*/
 .claro boton_main_menu {
-color: var(--text-color-claro);
-background-color: var(--button-color-oscuro);
+color: var(--button-text-color-claro);
+background-color: var(--button-color-claro);
 }
 
 .oscuro boton_main_menu {
-color: var(--text-color-oscuro);
-background-color: var(--button-color-claro);
+color: var(--button-text-color-oscuro);
+background-color: var(--button-color-oscuro);
 }
 
 /* Como se manejan los estados activado/hover? */
 .claro .activado boton_main_menu {
-color: var(--text-color-claro);
-background-color: var(--button-activado-color-oscuro);
-}
-
-.oscuro .activado boton_main_menu {
-color: var(--text-color-oscuro);
+color: var(--button-text-color-oscuro);
 background-color: var(--button-activado-color-claro);
 }
 
+.oscuro .activado boton_main_menu {
+color: var(--button-text-color-claro);
+background-color: var(--button-activado-color-oscuro);
+}
+
 .claro .hover boton_main_menu {
-color: var(--text-color-claro);
+color: var(--button-text-color-claro);
 background-color: var(--button-hover-color-oscuro);
 }
 
 .oscuro .hover boton_main_menu {
-color: var(--text-color-oscuro);
+color: var(--button-text-color-oscuro);
+background-color: var(--button-hover-color-claro);
+}
+
+/* botones pequeños del menu movil */
+.claro boton_movil_menu {
+    color: var(--button-text-color-claro);
+    background-color: var(--button-color-claro);
+}
+    
+.oscuro boton_movil_menu {
+color: var(--button-text-color-oscuro);
+background-color: var(--button-color-oscuro);
+}
+
+/* Como se manejan los estados activado/hover? */
+.claro .activado boton_movil_menu {
+color: var(--button-text-color-oscuro);
+background-color: var(--button-activado-color-claro);
+}
+
+.oscuro .activado boton_movil_menu {
+color: var(--button-text-color-claro);
+background-color: var(--button-activado-color-oscuro);
+}
+
+.claro .hover boton_movil_menu {
+color: var(--button-text-color-claro);
+background-color: var(--button-hover-color-oscuro);
+}
+
+.oscuro .hover boton_movil_menu {
+color: var(--button-text-color-oscuro);
 background-color: var(--button-hover-color-claro);
 }
 
@@ -199,3 +232,99 @@ background-color: var(--button-hover-color-claro);
 #cristauro-logo{
 	width:10.0%;
 }
+
+.logos_footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.marca_logo{
+   width:16%; 
+}
+
+/*          Test for the shape of the button Offer
+cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
+*/
+/* Button Border Style */
+.button.border {
+    text-transform:uppercase; /* tmp test;works */
+    border-top:4px solid #e04e5e; /* doesn't work??? */
+    border-bottom:4px solid #e04e5e; /* doesn't work??? */
+}
+.button.border:hover {
+background:#e04e5e;
+color:#fff;
+}
+
+/* Button Ribbon-Outset Border Style */
+
+.button.ribbon-outset.border:after,
+.button.ribbon-outset.border:before {
+  top: 50%;
+  content: " ";
+  height: 43px;
+  width: 43px;
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+}
+.button.ribbon-outset.border:after {
+  left: -3px;
+  margin-top: -40px;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-bottom: 4px solid #e04e5e;
+  border-left: 4px solid #e04e5e;
+  transform: rotate(57.5deg) skew(30deg);
+}
+.button.ribbon-outset.border:before {
+  right: -46px;
+  margin-top: -40px;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-top: 4px solid #e04e5e;
+  border-right: 4px solid #e04e5e;
+  transform: rotate(57.5deg) skew(30deg);
+}
+.button.ribbon-outset.border:hover:after {
+  background: #e04e5e
+}
+.button.ribbon-outset.border:hover:before {
+  background: #e04e5e
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
