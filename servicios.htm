@@ -8,14 +8,14 @@
 
 <link type="text/css" rel="stylesheet" href="./css/jvc.css">
 <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
+<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
+<script type="text/javascript" src="./javascript/jvc.js" ></script>	
+
 </head>
 
 <body class="claro">
-	<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
-	<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./javascript/jvc.js" ></script>	
-
-<header class="claro">
+<header>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="logos">
@@ -26,127 +26,134 @@
 		<!--visible when small -->
 		<div class="col-sm-3 d-none d-sm-block d-md-none">
 			<nav>
-			<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
-
-			<ul class="sub-menu">
-				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./inicio.htm" alt="Boton inicio">Inicio</a>
-				</li>
-				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./nosotros.htm">Nosotros</a>
-				</li>
-				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./servicios.htm">Servicios</a>
-				</li>
-				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./productos.htm>Productos</a>
-				</li>
-				<li class="navigation-list">
-					<a class="menu-link claro" type="button"
-						href="./contacto.htm">Contacto</a>
-				</li>
-			</ul>
+				<div class="menu-movil">
+					<!--ul><li id="submenu-movil"-->
+					<div id="submenu-movil">
+						<!--a href="#">Home</a-->
+						<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
+						<ul class="submenu">
+							<li>
+								<a class="boton_main_menu claro" style="border:2px solid greenyellow;"
+									href="./inicio.htm">Inicio</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./nosotros.htm">Nosotros</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./servicios.htm">Servicios</a>
+							</li>
+							<li>
+								<a class="boton_main_menu claro"
+									href="./productos.htm">Productos</a>
+							</li>
+							<li class="navigation-list">
+								<a class="boton_main_menu claro"
+									href="./contacto.htm">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</div>
 	<!-- disappears when small -->
-	<div class="col-sm-12 d-none d-s-none d-md-block">
-		<!--div class="row"-->
+		<div class="col-sm-12 d-none d-s-none d-md-block">
 			<nav class="container">
 				
 				<ul class="menu">
 				<!--div class="btn-group claro" -->
 					<li class="navigation-list">
-						<a class="menu-link btn btn-primary claro" type="button"
-							href="./inicio.htm" alt="Boton inicio">Inicio</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./inicio.htm">Inicio</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
-							href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./nosotros.htm">Nosotros</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
-							href="./servicios.htm" alt="Boton servicios">Servicios</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./servicios.htm">Servicios</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
-							href="./productos.htm" alt="Boton productos">Productos</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./productos.htm">Productos</a>
 					</li>
 					<li class="navigation-list">
-						<a class="btn btn-primary menu-link claro" type="button"
-							href="./contacto.htm" alt="Boton contacto">Contacto</a>
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./contacto.htm">Contacto</a>
 					</li>
 				</ul>
 			</nav>
-			<div>
+		</div>
 				<!-- Boton para cambiar el modo oscuro-claro -->
 				<!--label for="darkmodeswitch">Modo oscuro</label>
 				<input type="checkbox" id="darkmodeswitch" />
-				<script type="text/javascript" src="./javascript/Menu.js" ></script>	
+				<script type="text/javascript" src="./script/Menu.js" ></script>	
 				<script type="text/javascript">
 					window.currBoton = "";
 					window.darkmodeswitch = document.getElementById("darkmodeswitch");
 					window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
 				</script-->
-			</div>
-		<!--/div-->
-	</div>
+	
 	</div>
 </header>
 
 <main class="claro">
-<!--<base href="https://industriajvcsac.com/">-->
-<h1>Nuestros servicios</h1>
+	<div class="container-fluid">
 
-<p>
-Nuestra empresa Comercial &amp; Industrial S.A.C. cuenta con un servicio t&eacute;cnico
-altamente especializado, asimismo, parte de nuestro servicio es la post venta que brindamos,
-ya que en todo momento estamos en constante capacitaci&oacute;n y Pendiente de los requerimientos
-de nuestros clientes. Asimismo cada t&eacute;cnico cuenta con los implementos de seguridad laboral
-correspondiente con el fin de evitar accidentes laborales.
-</p>
-
-<div>
-
-<div class="container mt-5">
+	<!--<base href="https://industriajvcsac.com/">-->
 	<div class="row">
-		<div class="col-sm-4">
-			<div class="servicio-card">
-			<h2 class="servicio-card">Capacitaci&Oacute;n de uso post venta</h2>
-			<img src="./assets/img/Servicios/capacitacion-de-uso-post-venta-1631716703-m.jpg" alt=""/>
-			Contamos con el valor agregado de la capacitaci&oacute;n al usuario final posterior a la venta
-			de nuestras m&aacute;quinas.
+		<h1>Nuestros servicios</h1>
+
+		<p>
+		Nuestra empresa Comercial &amp; Industrial S.A.C. cuenta con un servicio t&eacute;cnico
+		altamente especializado, asimismo, parte de nuestro servicio es la post venta que brindamos,
+		ya que en todo momento estamos en constante capacitaci&oacute;n y Pendiente de los requerimientos
+		de nuestros clientes. Asimismo cada t&eacute;cnico cuenta con los implementos de seguridad laboral
+		correspondiente con el fin de evitar accidentes laborales.
+		</p>
+	</div>
+
+	<div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="servicio-card">
+						<h2 class="servicio-card">Capacitaci&Oacute;n de uso post venta</h2>
+						<img src="./assets/img/Servicios/capacitacion-de-uso-post-venta-1631716703-m.jpg" alt=""/>
+						Contamos con el valor agregado de la capacitaci&oacute;n al usuario final posterior a la venta
+						de nuestras m&aacute;quinas.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="servicio-card">
+						<h2 class="servicio-card">Rebobinado de motores</h2>
+						<img src="./assets/img/Servicios/rebobinado-de-motores-1568062364-m.jpg" alt=""/>
+						Rebobinado y reparaci&oacute;n de motores de aspiradoras, lustradoras, scrubbers, etc.
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="servicio-card">
-			<h2 class="servicio-card">Rebobinado de motores</h2>
-			<img src="./assets/img/Servicios/rebobinado-de-motores-1568062364-m.jpg" alt=""/>
-			Rebobinado y reparaci&oacute;n de motores de aspiradoras, lustradoras, scrubbers, etc.
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="servicio-card"> 
+						<h2 class="servicio-card">reparaci&Oacute;n de scrubbers</h2>
+						<img src="./assets/img/Servicios/reparacion-de-scrubbers-1568063677-m.jpg" alt=""/>
+						Reparaci&oacute;n y mantenimiento de scrubbers de todas las marcas
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="servicio-card"> 
+						<h2 class="servicio-card">Capacitaci&Oacute;n t&Eacute;cnica constante</h2>
+						<img src="./assets/img/Servicios/capacitacion-tecnica-constante-1568064772-m.jpg" alt=""/>
+						Nuestro personal t&eacute;cnico es capacitado de manera constante con el fin de cumplir
+						los retos en cada servicio y obtener la Satisfacci&oacute;n total de nuestros clientes.
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-4">
-			<div class="servicio-card"> 
-			<h2 class="servicio-card">reparaci&Oacute;n de scrubbers</h2>
-			<img src="./assets/img/Servicios/reparacion-de-scrubbers-1568063677-m.jpg" alt=""/>
-			Reparaci&oacute;n y mantenimiento de scrubbers de todas las marcas
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="servicio-card"> 
-			<h2 class="servicio-card">Capacitaci&Oacute;n t&Eacute;cnica constante</h2>
-			<img src="./assets/img/Servicios/capacitacion-tecnica-constante-1568064772-m.jpg" alt=""/>
-			Nuestro personal t&eacute;cnico es capacitado de manera constante con el fin de cumplir
-			los retos en cada servicio y obtener la Satisfacci&oacute;n total de nuestros clientes.
-			</div>
-		</div>
 	</div>
-</div>
 </main>
 
 <footer class="claro">
@@ -167,4 +174,5 @@ correspondiente con el fin de evitar accidentes laborales.
 	</div>
 </footer>
 
-</body></html>
+</body>
+</html>
