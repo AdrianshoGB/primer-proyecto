@@ -40,32 +40,18 @@
 
 
 /* -> modo claro */
-.claro body {
+.claro.main_div {
     color: var(--text-color-claro);
     background-image: url("../assets/img/Otros/ILwMb87.png");
     background-color: var(--background-color-claro);
 }
 
 /* -> modo oscuro */
-.oscuro body {
+.oscuro.main_div {
     color: var(--text-color-oscuro);
     background-image: url("../assets/img/Otros/ILwMb87.png");
     background-color: var(--background-color-oscuro);
 }
-
-/* -> modo claro */
-/*.claro main{
-    color: var(--text-color-claro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
-    background-color: var(--background-color-claro);
-}*/
-
-/* -> modo oscuro */
-/*.oscuro main{
-    color: var(--text-color-oscuro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
-    background-color: var(--background-color-oscuro);
-}*/
 
 h1 {
 	text-align: center;
@@ -211,23 +197,24 @@ background-color: var(--button-hover-color-oscuro);
    width:16%; 
 }
 
-/*          Test for the shape of the button Offer
+/*          Test for the shape of the button Offertas
 cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
 */
 /* Button Border Style */
+/*
 .button.border {
-    text-transform:uppercase; /* tmp test;works */
-    border-top:4px solid #e04e5e; /* doesn't work??? */
-    border-bottom:4px solid #e04e5e; /* doesn't work??? */
+    text-transform:uppercase; Tmp test;works
+    border-top:4px solid #e04e5e; doesn't work???
+    border-bottom:4px solid #e04e5e; doesn't work???
 }
 .button.border:hover {
 background:#e04e5e;
 color:#fff;
-}
+}*/
 
 /* Button Ribbon-Outset Border Style */
 
-.button.ribbon-outset.border:after,
+/*.button.ribbon-outset.border:after,
 .button.ribbon-outset.border:before {
   top: 50%;
   content: " ";
@@ -260,39 +247,5 @@ color:#fff;
 }
 .button.ribbon-outset.border:hover:before {
   background: #e04e5e
-}
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
+}*/
 
