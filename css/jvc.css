@@ -7,6 +7,8 @@
   text-decoration: none;
 }
 
+/* ------------------------- variables para todos los colores ------------------------ */
+
 :root {
 	/* Desde el figma de Adrian */
   --primary-color1:  #BE0016;
@@ -142,7 +144,7 @@ h2 {
     padding-right: 6px;
 }
 
-/* Botones grandes del menu Desktop*/
+/* ---------------------- Botones del menu principal ----------------------*/
 .claro .boton_main_menu {
 color: var(--button-text-color-claro);
 background-color: var(--button-color-claro);
@@ -153,26 +155,27 @@ color: var(--button-text-color-oscuro);
 background-color: var(--button-color-oscuro);
 }
 
-/* Como se manejan los estados activado/hover? */
-.claro .activado .boton_main_menu {
+.claro .boton_main_menu:active {
 color: var(--button-text-color-oscuro);
 background-color: var(--button-activado-color-claro);
 }
 
-.oscuro .activado .boton_main_menu {
+.oscuro .boton_main_menu:active {
 color: var(--button-text-color-claro);
 background-color: var(--button-activado-color-oscuro);
 }
 
-.claro .hover .boton_main_menu {
+.claro .boton_main_menu:hover {
 color: var(--button-text-color-claro);
-background-color: var(--button-hover-color-claro);
+background-color: var(--button-color-hover-claro);
 }
 
-.oscuro .hover .boton_main_menu {
+.oscuro .boton_main_menu:hover {
 color: var(--button-text-color-oscuro);
-background-color: var(--button-hover-color-oscuro);
+background-color: var(--button-color-hover-oscuro);
 }
+
+/* -------------------- LOGOS -------------------- */
 
 .logos {
 	display: flex;
