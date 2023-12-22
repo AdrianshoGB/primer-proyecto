@@ -8,14 +8,13 @@
 
 <link type="text/css" rel="stylesheet" href="./css/jvc.css">
 <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
+<script type="text/javascript" src="./javascript/jvc.js" ></script>	
+
 </head>
 
 <body class="claro">
-	<!--script type="text/javascript" src="./script/UpdateDark.js" /-->
-	<script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./javascript/jvc.js" ></script>	
-
-<header class="claro">
+<header>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="logos">
@@ -23,44 +22,69 @@
 				<img id="cristauro-logo" src="./assets/img/Otros/CrisTauro.png" alt="Logo de Cristauro"/>
 			</div>
 		</div>
-	<div class="row">
-		<nav>
-			<ul class="menu">
-			<!--div class="btn-group claro" -->
-				<li class="navigation-list">
-					<a class="menu-link btn btn-primary claro" type="button"
-						href="./inicio.htm" alt="Boton inicio">Inicio</a>
-				</li>
-				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./nosotros.htm" alt="Boton nosotros">Nosotros</a>
-				</li>
-				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./servicios.htm" alt="Boton servicios">Servicios</a>
-				</li>
-				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./productos.htm" alt="Boton productos">Productos</a>
-				</li>
-				<li class="navigation-list">
-					<a class="btn btn-primary menu-link claro" type="button"
-						href="./contacto.htm" alt="Boton contacto">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-		<div>
-			<!-- Boton para cambiar el modo oscuro-claro -->
-			<!--label for="darkmodeswitch">Modo oscuro</label>
-			<input type="checkbox" id="darkmodeswitch" />
-			<script type="text/javascript" src="./javascript/Menu.js" ></script>	
-			<script type="text/javascript">
-				window.currBoton = "";
-				window.darkmodeswitch = document.getElementById("darkmodeswitch");
-				window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
-			</script-->
+		<!--visible when small -->
+		<div class="col-sm-3 d-none d-sm-block d-md-none">
+			<nav>
+				<div class="menu-movil">
+					<!--ul><li id="submenu-movil"-->
+					<div id="submenu-movil">
+						<!--a href="#">Home</a-->
+						<img class="img-menu-movil" src="./assets/img/Otros/MenuMovil.png" alt="Menu para movil"/>
+						<ul class="submenu">
+							<li>
+								<a class="btn btn-primary boton_main_menu claro"
+									href="./inicio.htm">Inicio</a>
+							</li>
+							<li>
+								<a class="btn btn-primary boton_main_menu claro"
+									href="./nosotros.htm">Nosotros</a>
+							</li>
+							<li>
+								<a class="btn btn-primary boton_main_menu claro"
+									href="./servicios.htm">Servicios</a>
+							</li>
+							<li>
+								<a class="btn btn-primary boton_main_menu claro"
+									href="./productos.htm">Productos</a>
+							</li>
+							<li class="navigation-list">
+								<a class="btn btn-primary boton_main_menu claro"
+									href="./contacto.htm">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
-	</div>
+	<!-- disappears when small -->
+		<div class="col-sm-12 d-none d-s-none d-md-block">
+			<nav class="container">
+				
+				<ul class="menu">
+				<!--div class="btn-group claro" -->
+					<li class="navigation-list">
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./inicio.htm">Inicio</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./nosotros.htm">Nosotros</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./servicios.htm">Servicios</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./productos.htm">Productos</a>
+					</li>
+					<li class="navigation-list">
+						<a class="btn btn-primary boton_main_menu claro"
+							href="./contacto.htm">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</div>	
 	</div>
 </header>
 
@@ -70,9 +94,23 @@
 </div>
 </main>
 
-<footer>
-	<div>
-		<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
+<footer class="claro">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="logos-footer">
+				<img class="marca_logo" src="./assets/img/Otros/nRyCTWc.png" alt="Logo de JVC"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782528.jpg" alt="Logo de Cristauro"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782546.jpg" alt="Logo de ..."/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1555554923.jpg" alt="Logo de TVX"/>
+				<img class="marca_logo" src="./assets/img/Marcas/marcas-1531782566.jpg" alt="Logo de ..."/>
+				<img class="marca_logo" src="./assets/img/Marcas/PYhqQQb.png" alt="Logo de ..."/>
+			</div>
+		</div>
+		<div>
+			<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
+		</div>
 	</div>
 </footer>
-</body></html>
+
+</body>
+</html>
