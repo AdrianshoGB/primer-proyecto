@@ -9,7 +9,7 @@
 
 :root {
 	/* From el figma de Adrian */
-  --primary-color1: #BE0016;
+  --primary-color1:  #BE0016;
   --primary-color2: #790C18;
   --primary-color3: #E54658;
 
@@ -69,7 +69,7 @@
 
 h1 {
 	text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -157,67 +157,35 @@ h2 {
 }
 
 /* Botones grandes del menu Desktop*/
-.claro boton_main_menu {
+.claro .boton_main_menu {
 color: var(--button-text-color-claro);
 background-color: var(--button-color-claro);
 }
 
-.oscuro boton_main_menu {
+.oscuro .boton_main_menu {
 color: var(--button-text-color-oscuro);
 background-color: var(--button-color-oscuro);
 }
 
 /* Como se manejan los estados activado/hover? */
-.claro .activado boton_main_menu {
+.claro .activado .boton_main_menu {
 color: var(--button-text-color-oscuro);
 background-color: var(--button-activado-color-claro);
 }
 
-.oscuro .activado boton_main_menu {
+.oscuro .activado .boton_main_menu {
 color: var(--button-text-color-claro);
 background-color: var(--button-activado-color-oscuro);
 }
 
-.claro .hover boton_main_menu {
+.claro .hover .boton_main_menu {
 color: var(--button-text-color-claro);
-background-color: var(--button-hover-color-oscuro);
-}
-
-.oscuro .hover boton_main_menu {
-color: var(--button-text-color-oscuro);
 background-color: var(--button-hover-color-claro);
 }
 
-/* botones pequeños del menu movil */
-.claro boton_movil_menu {
-    color: var(--button-text-color-claro);
-    background-color: var(--button-color-claro);
-}
-    
-.oscuro boton_movil_menu {
+.oscuro .hover .boton_main_menu {
 color: var(--button-text-color-oscuro);
-background-color: var(--button-color-oscuro);
-}
-
-/* Como se manejan los estados activado/hover? */
-.claro .activado boton_movil_menu {
-color: var(--button-text-color-oscuro);
-background-color: var(--button-activado-color-claro);
-}
-
-.oscuro .activado boton_movil_menu {
-color: var(--button-text-color-claro);
-background-color: var(--button-activado-color-oscuro);
-}
-
-.claro .hover boton_movil_menu {
-color: var(--button-text-color-claro);
 background-color: var(--button-hover-color-oscuro);
-}
-
-.oscuro .hover boton_movil_menu {
-color: var(--button-text-color-oscuro);
-background-color: var(--button-hover-color-claro);
 }
 
 .logos {
