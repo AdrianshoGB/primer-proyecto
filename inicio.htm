@@ -12,10 +12,17 @@
 <script type="text/javascript" src="./bootstrap-5.0.2-dist/css/bootstrap.min.js"></script>
 <script type="text/javascript" src="./javascript/jvc.js" ></script>	
 
+<!--   Para el carousel -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/lightslider.css">
+<script type="text/javascript" src="./script/lightslider.js.descargado"></script>
+<script type="text/javascript" src="./script/web.js.descargado"></script>
+
 </head>
 
-<body class="claro">
-<header>
+<body>
+	<div class="container-fluid claro main_div">
+	<header>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="logos">
@@ -106,11 +113,9 @@
 					window.darkmodeswitch.addEventListener('change', darkModeSwitchChanged);
 				</script-->
 	
-	</div>
-</header>
+	</header>
 
-<main class="claro">
-	<div class="container-fluid">
+	<main>
 
 	<h1>Inicio</h1>
 		<section>
@@ -147,116 +152,204 @@
 			</article>
 			
 			<article class="container">
-				<!-- Carousel test
-				<div class="row mx-auto my-auto justify-content-center">
-					<div class="col-xs-12">
-						<div class="carousel-inner" role="listbox">
-							<div id="imgCarouselOfertas" class="carousel slide"
-									data-interval="2000"
-									data-ride="carousel"
-									data-pauqse="hover"
-									data-wrap="true">
-								<ol class="carousel-indicators">
-									<li data-target="#imgCarouselOfertas" data-slide-to="0" class="active"> </li>
-									<li data-target="#imgCarouselOfertas" data-slide-to="1"> </li>
-									<li data-target="#imgCarouselOfertas" data-slide-to="2"> </li>
-								</ol>
-								<div class="carousel-inner">
-									<div class="item active">
-										<div class="row">
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 0</p>
-												</div>
-											</div>
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 1</p>
-												</div>
-											</div>
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 2</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="row">
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 3</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="row">
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 4</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item">
-										<div class="row">
-											<div class="col-xs-4">
-												<img class="img-responsive" src="./assets/img/Marcas/marcas-1531782528.jpg"
-													alt="Logo"/>
-												<div class="carousel-caption">
-													<p>descr 5</p>
-												</div>
-											</div>
-										</div>
-									</div>
-
+				<!-- TODO: carousel -->
+			</article>
+		</section>
+		<section class="offerta">
+			<article>
+				<!--a href="#" class="button ribbon-outset border">&iexcl;Productos<br>
+					destacatos!</a-->
+				<div>
+					<h2><b>Productos Destacados</b></h2>
+				</div>
+			</article>
+			<article>									
+				<ul class="list cat" id="slider-categorias">
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/abrillantadoras-industriales/abrillantadora-de-pisos-y-viniles-mod-amg-1500a/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
 								</div>
-								<a href="#imgCarouselOfertas" class="carousel-control left" data-slide="prev">
-									<span class="glypgicon glyphicon-chevron.left">
-									</span>
-								</a>
-								<a href="#imgCarouselOfertas" class="carousel-control right" data-slide="next">
-									<span class="glypgicon glyphicon-chevron.rightt">
-									</span>
-								</a>
-							</div>
+								<figure>							
+									<!--img src="./JVC_SAC_files/35-1-abrillantadora-de-pisos-y-viniles-mod-amg-1500a.jpg"-->
+									<img src="assets/img/ProductosCategTransp/35-1-abrillantadora-de-pisos-y-viniles-mod-amg-1500a.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/abrillantadoras-industriales/abrillantadora-de-pisos-y-viniles-mod-amg-1500a/" class="a">ABRILLANTADORAS INDUSTRIALES</a>
 						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/aspiradoras-industriales/aspiradora-secadora-para-uso-en-veterinarias/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/77-1-aspiradora-secadora-para-uso-en-veterinarias.jpg"-->
+									<img src="assets/img/ProductosCategTransp/77-1-aspiradora-secadora-para-uso-en-veterinarias.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/aspiradoras-industriales/aspiradora-secadora-para-uso-en-veterinarias/" class="a">ASPIRADORAS INDUSTRIALES</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/barredoras-industriales/barredora-industrial-hombre-a-bordo-tvx-mod-ts1300/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/26-1-barredora-industrial-hombre-a-bordo-tvx-mod-ts1300.jpg"-->
+									<img src="assets/img/ProductosCategTransp/26-1-barredora-industrial-hombre-a-bordo-tvx-mod-ts1300.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/barredoras-industriales/barredora-industrial-hombre-a-bordo-tvx-mod-ts1300/" class="a">BARREDORAS INDUSTRIALES</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/equipos-de-fumigacion/pulverizadora-manual-tipo-mochila-master-golds-20-litros/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/76-1-pulverizadora-manual-master-golds.jpg"-->
+									<img src="assets/img/ProductosCategTransp/76-1-pulverizadora-manual-master-golds.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/equipos-de-fumigacion/pulverizadora-manual-tipo-mochila-master-golds-20-litros/" class="a">EQUIPOS DE FUMIGACIÓN</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/fregadoras-de-piso/fregadora-secadora-industrial-de-pisos-marca-tvx-mod-t35/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/21-3-fregadora-secadora-de-pisos-tvx-mod-t35.jpg"-->
+									<img src="assets/img/ProductosCategTransp/21-3-fregadora-secadora-de-pisos-tvx-mod-t35.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/fregadoras-de-piso/fregadora-secadora-industrial-de-pisos-marca-tvx-mod-t35/" class="a">FREGADORAS DE PISO</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/hidrolavadoras/hidrolavadora-profesional-gris-mod-hmg6-15cl/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/39-1-hidrolavadora-profesional-gris-mod-hmg6-15cl.jpg"-->
+									<img src="assets/img/ProductosCategTransp/39-1-hidrolavadora-profesional-gris-mod-hmg6-15cl.png">
+								</figure>
+							</a>
+							<a href="#https://industriajvcsac.com/productos/hidrolavadoras/hidrolavadora-profesional-gris-mod-hmg6-15cl/" class="a">HIDROLAVADORAS</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/lavadora-de-alfombras/lavadora-de-alfombras-cristauro-inyeccion-a-espuma/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/14-8-lavadora-de-alfombras-cristauro-inyeccion-y-succion-de-espuma.jpg"-->
+									<img src="assets/img/ProductosCategTransp/14-8-lavadora-de-alfombras-cristauro-inyeccion-y-succion-de-espuma.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/lavadora-de-alfombras/lavadora-de-alfombras-cristauro-inyeccion-a-espuma/" class="a">LAVADORA DE ALFOMBRAS</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/limpiadora-de-escaleras-electricas/limpiador-de-escaleras-electricas/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/10-1-limpiador-de-escaleras-electricas.jpg"-->
+									<img src="assets/img/ProductosCategTransp/10-1-limpiador-de-escaleras-electricas.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/limpiadora-de-escaleras-electricas/limpiador-de-escaleras-electricas/" class="a">LIMPIADORA DE ESCALERAS ELECTRICAS</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/limpiador-de-sillones-y-butacas/lavadora-profesional-de-sillones-y-butacas/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/9-7-lavador-profesional-de-sillones-y-butacas-master-golds.jpg"-->
+									<img src="assets/img/ProductosCategTransp/9-7-lavador-profesional-de-sillones-y-butacas-master-golds.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/limpiador-de-sillones-y-butacas/lavadora-profesional-de-sillones-y-butacas/" class="a">LIMPIADOR DE SILLONES Y BUTACAS</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/lustradoras-lavadoras/lustradora-lavadora-industrial-de-pisos-cristauro-td12n/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/17-3-lustradora-lavadora-industrial-de-pisos-cris-tauro-td12.jpg"-->
+									<img src="assets/img/ProductosCategTransp/17-3-lustradora-lavadora-industrial-de-pisos-cris-tauro-td12.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/lustradoras-lavadoras/lustradora-lavadora-industrial-de-pisos-cristauro-td12n/" class="a">LUSTRADORAS - LAVADORAS</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/maquinas-de-jardineria/desbrozadora-newtop-nts139cg/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/61-1-desbrozadora-newtop-nts139cg.jpg"-->
+									<img src="assets/img/ProductosCategTransp/61-1-desbrozadora-newtop-nts139cg.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/maquinas-de-jardineria/desbrozadora-newtop-nts139cg/" class="a">MÁQUINAS DE JARDINERÍA</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#industriajvcsac.com/productos/secador-de-alfombras/secadora-industrial-para-alfombras-y-pasadizos-mojados/" class="i">
+								<div class="v">
+									<span><i class="fas fa-eye"></i> Ver categoría</span>
+								</div>
+								<figure>								
+									<!--img src="./JVC_SAC_files/16-5-secadora-industrial-para-alfombras-y-pasadizos-mojados.jpg"-->
+									<img src="assets/img/ProductosCategTransp/16-5-secadora-industrial-para-alfombras-y-pasadizos-mojados.png">
+								</figure>
+							</a>
+							<a href="#industriajvcsac.com/productos/secador-de-alfombras/secadora-industrial-para-alfombras-y-pasadizos-mojados/" class="a">SECADOR DE ALFOMBRAS</a>
+						</div>
+					</li>
+				</ul>
 					</div>
-				</div>-->
+				</div>
+					
 			</article>
 		</section>
 		<section class="offerta">
+			<div><h2>Nuestra marca</h2></div>
 			<article>
-				<a href="#" class="button ribbon-outset border">&iexcl;Productos<br>
-					destacatos!</a>
-			</article>
-			<article>
-			</article>
-		</section>
-		<section class="offerta">
-			<article>
-				<h2>Nuestra marca</h2><br>
 Somos fabricantes de las m&aacute;quinas CRIS-TAURO, asimismo comercializamos las marcas MASTER GOLDS y SPEED POWER.
 En nuestro deseo de ofrecer Productos de Limpieza con Alta Tecnolog&iacute;a Digital hemos cerrado un Convenio 
 Internacional que nos reconoce como REPRESENTANTES NACIONALES de las m&aacute;quinas TVX y NEWTOP.
 			</article>
 		</section>
-	</div>
-</main>
+	</main>
 
-<footer class="claro">
-	<div class="container-fluid">
+	<footer class="claro">
 		<div class="row">
 			<div class="logos-footer">
 				<img class="marca_logo" src="./assets/img/Otros/nRyCTWc.png" alt="Logo de JVC"/>
@@ -270,7 +363,8 @@ Internacional que nos reconoce como REPRESENTANTES NACIONALES de las m&aacute;qu
 		<div>
 			<span>&copy; 2023 industrial jvc; Desarrollado por <a href="https://industriajvcsac.com/#">creation!</a></span>
 		</div>
-	</div>
-</footer>
+	</footer>
+</div>
 
-</body></html>
+</body>
+</html>

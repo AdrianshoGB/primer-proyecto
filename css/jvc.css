@@ -7,20 +7,26 @@
   text-decoration: none;
 }
 
+/* ------------------------- variables para todos los colores ------------------------ */
+
 :root {
-	/* From el figma de Adrian */
+	/* Desde el figma de Adrian */
   --primary-color1:  #BE0016;
   --primary-color2: #790C18;
   --primary-color3: #E54658;
+  --primary-color3-transp: #E546587F;
 
   --secondary-color1: #FFF1C4; /* Beige */
   --secondary-color2: #161414; /* Gris oscuro */
+  --secondary-color3: #90B8F3; /* Azul claro */
+  --secondary-color4: #3084E7; /* Azul medio */
+  --secondary-color5: #20538F; /* Azul oscuro */
 
   --button-color-claro: #BE0016;
   --button-text-color-claro: #FF8B8B;
 
   --button-color-oscuro: #BE0016; /*primary-color1*/
-  --button-text-color-oscuo:  #FF8B8B;
+  --button-text-color-oscuro:  #FF8B8B;
 
   --button-color-activado-claro: #790C18; /*para el modo claro, buton activado: primary-color2 (antés: azul oscuro) */
   --button-color-activado-oscuro: #FF1111; /*para el modo oscuro, buton activado: color-posiblemente1 */
@@ -40,32 +46,18 @@
 
 
 /* -> modo claro */
-.claro body {
+.claro.main_div {
     color: var(--text-color-claro);
     background-image: url("../assets/img/Otros/ILwMb87.png");
     background-color: var(--background-color-claro);
 }
 
 /* -> modo oscuro */
-.oscuro body {
+.oscuro.main_div {
     color: var(--text-color-oscuro);
     background-image: url("../assets/img/Otros/ILwMb87.png");
     background-color: var(--background-color-oscuro);
 }
-
-/* -> modo claro */
-/*.claro main{
-    color: var(--text-color-claro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
-    background-color: var(--background-color-claro);
-}*/
-
-/* -> modo oscuro */
-/*.oscuro main{
-    color: var(--text-color-oscuro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
-    background-color: var(--background-color-oscuro);
-}*/
 
 h1 {
 	text-align: center;
@@ -77,20 +69,20 @@ h2 {
 }
 
 .claro .servicio-card p {
-	background-color: #3084E7;
+	background-color: var(--secondary-color4);
 }
 .oscuro .servicio-card p {
-	background-color: #90B8F3;
+	background-color: var(--background-color-claro);
 }
 
 .claro .servicio-card h2 {
-	background-color: #121212; /* gris oscuro */
-	color: white;
+	background-color: var(--secondary-color2); /* gris oscuro */
+	color: var(--secondary-color1);
 }
 
 .oscuro .servicio-card h2 {
-	background-color: white;
-	color: #121212; /* gris oscuro */
+	background-color: var(--secondary-color1);
+	color: var(--secondary-color2); /* gris oscuro */
 }
 
 .img-menu-movil {
@@ -122,7 +114,7 @@ h2 {
 .submenu {
     display: none;
     position: absolute;
-    background-color: rgb(82, 1, 82);
+    background-color: var(--secondary-color2);
     border: 2px solid white;
     top: 0;
     left: 100%;
@@ -156,7 +148,7 @@ h2 {
     padding-right: 6px;
 }
 
-/* Botones grandes del menu Desktop*/
+/* ---------------------- Botones del menu principal ----------------------*/
 .claro .boton_main_menu {
 color: var(--button-text-color-claro);
 background-color: var(--button-color-claro);
@@ -167,26 +159,27 @@ color: var(--button-text-color-oscuro);
 background-color: var(--button-color-oscuro);
 }
 
-/* Como se manejan los estados activado/hover? */
-.claro .activado .boton_main_menu {
+.claro .boton_main_menu:active {
 color: var(--button-text-color-oscuro);
 background-color: var(--button-activado-color-claro);
 }
 
-.oscuro .activado .boton_main_menu {
+.oscuro .boton_main_menu:active {
 color: var(--button-text-color-claro);
 background-color: var(--button-activado-color-oscuro);
 }
 
-.claro .hover .boton_main_menu {
+.claro .boton_main_menu:hover {
 color: var(--button-text-color-claro);
-background-color: var(--button-hover-color-claro);
+background-color: var(--button-color-hover-claro);
 }
 
-.oscuro .hover .boton_main_menu {
+.oscuro .boton_main_menu:hover {
 color: var(--button-text-color-oscuro);
-background-color: var(--button-hover-color-oscuro);
+background-color: var(--button-color-hover-oscuro);
 }
+
+/* -------------------- LOGOS -------------------- */
 
 .logos {
 	display: flex;
@@ -211,23 +204,48 @@ background-color: var(--button-hover-color-oscuro);
    width:16%; 
 }
 
-/*          Test for the shape of the button Offer
+/* -------------------- CAROUSEL -------------------- */
+.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
+.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
+.list li > div{border:1px solid transparent;transition:all .2s;}
+.list li a{display:block;}
+.list li .i{position:relative;}
+.list li .i figure{margin:0px;}
+.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
+.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
+.list li .i .v span:hover{padding:0px 30px;}
+.list li .i figure img{width:100%;}
+.list li .a{font-size:11px;color:var(--primary-color1);text-align:center;padding:10px;background:var(--secondary-color1);font-weight: bold;}
+.list li:hover .a{background:var(--primary-color1);color:var(--secondary-color1);}
+.list li:hover > div{border-color:var(--primary-color1);}
+.list li:hover .i .v{height:100%;}
+
+.list.slid{margin:0px 0px 25px 0px;}
+.list.slid li{padding:0px 10px;}
+
+.list.cat{margin:-10px -10px 25px -10px;}
+.list.cat li{width:calc(100% / 6);padding:10px;}
+.list.cat li .i .v span{display:none;}
+/* -------------------- FIN DE CAROUSEL ------------- */
+
+/*          Test for the shape of the button Offertas
 cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
 */
 /* Button Border Style */
+/*
 .button.border {
-    text-transform:uppercase; /* tmp test;works */
-    border-top:4px solid #e04e5e; /* doesn't work??? */
-    border-bottom:4px solid #e04e5e; /* doesn't work??? */
+    text-transform:uppercase; Tmp test;works
+    border-top:4px solid #e04e5e; doesn't work???
+    border-bottom:4px solid #e04e5e; doesn't work???
 }
 .button.border:hover {
 background:#e04e5e;
-color:#fff;
-}
+color:var(--secondary-color1);
+}*/
 
 /* Button Ribbon-Outset Border Style */
 
-.button.ribbon-outset.border:after,
+/*.button.ribbon-outset.border:after,
 .button.ribbon-outset.border:before {
   top: 50%;
   content: " ";
@@ -235,7 +253,7 @@ color:#fff;
   width: 43px;
   position: absolute;
   pointer-events: none;
-  background: #fff;
+  background: var(--secondary-color1);
 }
 .button.ribbon-outset.border:after {
   left: -3px;
@@ -260,39 +278,5 @@ color:#fff;
 }
 .button.ribbon-outset.border:hover:before {
   background: #e04e5e
-}
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
+}*/
 
