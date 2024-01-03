@@ -112,12 +112,11 @@ h2 {
 }
 
 .submenu {
-    display: none;
     position: absolute;
     background-color: var(--secondary-color2);
     border: 2px solid white;
     top: 0;
-    left: 100%;
+    left: 10%;
     list-style-type: disc;
     padding-top: 0px;
     margin-top: 0px;
@@ -128,16 +127,15 @@ h2 {
 .submenu a {
     padding: 5px;
 }
-.submenu li {
+#submenu-movil .submenu li {
     display: none;
 }
-#submenu-movil:hover .submenu{
+
+#submenu-movil:hover .submenu {
     display: block;
 }
-#submenu-movil:hover .submenu li{
-    display: block;
-}
-#submenu-movil:hover .submenu li a{
+
+#submenu-movil:hover .submenu  li{
     display: block;
 }
 
