@@ -201,12 +201,31 @@ background-color: var(--button-color-hover-oscuro);
    width:16%; 
 }
 
+article div.p-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.p-titulo h1{
+    display:inline-block;
+    color: var(--secondary-color1);
+    font-size: 22px;
+    font-weight: 700;
+    background:var(--primary-color1); /* --secondary-color5); */
+    margin:0px;font-family:'Roboto Condensed';
+    text-transform:uppercase;
+    transform: skewX(-14deg);
+    text-align: center;
+    padding:7px 50px;
+    border-radius:4px;
+    box-shadow:inset 0px -3px 0px rgba(0,0,0,.2);}
+
 /* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
-#slider{font-size:0px;background:url(https://i.imgur.com/aGCjIJ9.png) no-repeat center #20538f;}
+#slider{font-size:0px;background:url(assets/img/Otros/aGCjIJ9.png) no-repeat center var(--secondary-color4);}
 
 #slider-img{margin:0px auto;max-width:1200px;box-shadow:0px 0px 20px rgba(0,0,0,0.2);position:relative;z-index:0;overflow:hidden;}
-#slider-img .b{position:absolute;left:-50px;top:0px;width:50px;height:100%;background:url(http://i.imgur.com/ZazCFfN.png) no-repeat center;opacity:0;}
-#slider-img .b.siguiente{background-image:url(http://i.imgur.com/LFn6U7B.png);left:auto;right:-50px;}
+#slider-img .b{position:absolute;left:-50px;top:0px;width:50px;height:100%;background:url(assets/img/Otros/ZazCFfN.png) no-repeat center;opacity:0;}
+#slider-img .b.siguiente{background-image:url(assets/img/Otros/LFn6U7B.png);left:auto;right:-50px;}
 #slider-img:hover .b{left:0px;background-color:rgba(0,0,0,.2);opacity:1;}
 #slider-img:hover .b.siguiente{left:auto !important;right:0px;}
 #slider-img .slider{margin:0px;padding:0px 0px;list-style:none;font-size:0px;text-align:center;width:100%;white-space:nowrap;box-sizing:border-box;}
@@ -238,55 +257,84 @@ background-color: var(--button-color-hover-oscuro);
 .list.cat li .i .v span{display:none;}
 /* -------------------- FIN DE CAROUSEL ------------- */
 
+.img-offerta {
+    width:30%;
+    height:auto;
+}
+
+.spreaded-col {
+    display:flex;
+    align-content: space-between;
+}
+.centered-col {
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+}
 /*          Test for the shape of the button Offertas
 cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-using-only-one-element
 */
 /* Button Border Style */
-/*
-.button.border {
-    text-transform:uppercase; Tmp test;works
-    border-top:4px solid #e04e5e; doesn't work???
-    border-bottom:4px solid #e04e5e; doesn't work???
+
+.button-offerta{
+    display:block;
+	position: relative;
+	line-height:80px;
+	text-align:center;
+	font-size:16px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color: var(--primary-color1);
+	margin:20px auto;
+    font-family:Helvetica, Arial, sans-serif;
+	box-sizing:border-box;
+    color: var(--secondary-color1);
+	background: var(--primary-color1);
 }
-.button.border:hover {
-background:#e04e5e;
-color:var(--secondary-color1);
-}*/
 
 /* Button Ribbon-Outset Border Style */
 
-/*.button.ribbon-outset.border:after,
-.button.ribbon-outset.border:before {
-  top: 50%;
-  content: " ";
-  height: 43px;
-  width: 43px;
-  position: absolute;
-  pointer-events: none;
-  background: var(--secondary-color1);
+.button-offerta.ribbon-outset.border:before{
+    top: 50%;
+    content: " ";
+    height: 43px;
+    width: 43px;
+    position: absolute;
+    pointer-events: none;  
 }
-.button.ribbon-outset.border:after {
-  left: -3px;
-  margin-top: -40px;
-  transform-origin: 0 0;
-  box-sizing: border-box;
-  border-bottom: 4px solid #e04e5e;
-  border-left: 4px solid #e04e5e;
-  transform: rotate(57.5deg) skew(30deg);
+.button-offerta.ribbon-outset.border:after {
+    content: " ";
+    height: 80px;
+    width: 43px;
+    position: absolute;
+    pointer-events: none;  
+    left:0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--primary-color3);
+    border-left: 4px solid var(--primary-color3);
+    transform: skew(-14deg);
+    background: var(--primary-color1);
+    z-index: 0;
 }
-.button.ribbon-outset.border:before {
+.button-offerta.ribbon-outset.border:before {
   right: -46px;
   margin-top: -40px;
   transform-origin: 0 0;
   box-sizing: border-box;
-  border-top: 4px solid #e04e5e;
-  border-right: 4px solid #e04e5e;
+  border-top: 4px solid var(--primary-color3);
+  border-right: 4px solid var(--primary-color3);
   transform: rotate(57.5deg) skew(30deg);
+  background: var(--primary-color1);
 }
-.button.ribbon-outset.border:hover:after {
-  background: #e04e5e
+.text-offerta
+{
+    z-index: 1;
 }
-.button.ribbon-outset.border:hover:before {
-  background: #e04e5e
+/* .button-offerta.ribbon-outset.border:hover:after {
+    background: var(--primary-color3);
+}
+.button-offerta.ribbon-outset.border:hover:before {
+  background: var(--primary-color3);
 }*/
 
