@@ -201,7 +201,20 @@ background-color: var(--button-color-hover-oscuro);
    width:16%; 
 }
 
-/* -------------------- CAROUSEL -------------------- */
+/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
+#slider{font-size:0px;background:url(https://i.imgur.com/aGCjIJ9.png) no-repeat center #20538f;}
+
+#slider-img{margin:0px auto;max-width:1200px;box-shadow:0px 0px 20px rgba(0,0,0,0.2);position:relative;z-index:0;overflow:hidden;}
+#slider-img .b{position:absolute;left:-50px;top:0px;width:50px;height:100%;background:url(http://i.imgur.com/ZazCFfN.png) no-repeat center;opacity:0;}
+#slider-img .b.siguiente{background-image:url(http://i.imgur.com/LFn6U7B.png);left:auto;right:-50px;}
+#slider-img:hover .b{left:0px;background-color:rgba(0,0,0,.2);opacity:1;}
+#slider-img:hover .b.siguiente{left:auto !important;right:0px;}
+#slider-img .slider{margin:0px;padding:0px 0px;list-style:none;font-size:0px;text-align:center;width:100%;white-space:nowrap;box-sizing:border-box;}
+#slider-img .slider li{display:inline-block;width:100%;vertical-align:top;}
+#slider-img .slider li a{display:block;overflow:hidden;}
+#slider-img .slider li img{width:100%;margin:0 0px;}
+
+/* -------------------- CAROUSEL (abajo de inicio.htm)-------------------- */
 .list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
 .list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
 .list li > div{border:1px solid transparent;transition:all .2s;}
