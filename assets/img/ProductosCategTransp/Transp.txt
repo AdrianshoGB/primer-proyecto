@@ -1,0 +1,28 @@
+9-7-lavador-profesional-de-sillones-y-butacas-master-golds: (426,592);
+10-1-limpiador-de-escaleras-electricas: (390,170), (300,400);
+14-8-lavadora-de-alfombras-cristauro-inyeccion-y-succion-de-espuma: (168,205), (172,140),
+	(172,170), (130,250), (200,480), (223,507), (223,507), (156,700), (163,616);
+17-3-lustradora-lavadora-industrial-de-pisos-cris-tauro-td12: (237,187),(255,420), (230,537), (255,538);
+21-3-fregadora-secadora-de-pisos-tvx-mod-t35: (296,63), (440,100);
+26-1-barredora-industrial-hombre-a-bordo-tvx-mod-ts1300: (210,200), (175,240), (100,512);
+35-1-abrillantadora-de-pisos-y-viniles-mod-amg-1500a:(215,313), (205,378);
+39-1-hidrolavadora-profesional-gris-mod-hmg6-15cl: (400,100), (270,175), (170,225), (170,225),
+	(220,280), (227,340), (230, 365);
+41-1-termonebulizadora-canon-corto-mod-mts-34-m: (40, 115), (110, 120), (127,137), (145,155), (160,170);
+44-1-maquina-ulv-modelo-2680a-m: (6, 145), (160,180);
+59-1-pulverizadora-newtop-nts423-m: (30,235), (55,230), (107,242), (107,242), (115,247),
+	(155,177), (163, 170);
+69-1-termonebulizadora-master-golds-tmg-bw20-m: (55,55), (150,172), (180,210);
+70-1-equipo-ulv-electrico-mastergolds-umg-1500e-m:(43,80), (100,87), (147,100), (142,112),
+	(128, 118), (136,181), (150, 180), (170, 170);
+71-1-ulv-electrico-mastergolds-umg-1500e-10-litros-m: (15,165), (38,135), (90, 85), (100, 240),
+ (155,210), (165, 185);
+72-1-ulv-electrico-master-golds-umg-15003e-16-litros-m: (15, 160), (45, 155), (115, 90), (160, 120),
+	(168, 138), (175, 185), (154, 189), (176,225);
+73-1-moto-atomizadora-newtop-nts-420-m: (165,165), (43,184);
+74-1-moto-pulverizadoras-newtop-nts-768-m: (160,260), (30, 220), (160,185), (160, 230);
+75-1-nebulizador-ulv-mod-pioneer-2020-m: (8,101), (160, 80);
+76-1-pulverizadora-manual-master-golds-m: (30,90), (45,100), (50,290), (100,100);
+76-1-pulverizadora-manual-master-golds: (65, 285), (110,200), (200,200), (222,344), (280,333),
+	(315,340), (122, 730);
+77-1-aspiradora-secadora-para-uso-en-veterinarias: (195,36), (65, 285), (405, 280);
