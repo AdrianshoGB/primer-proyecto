@@ -338,3 +338,11 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
   background: var(--primary-color3);
 }*/
 
+.carousel-item img {
+    width: 100%; /* Esto hará que la imagen ocupe el ancho completo del contenedor */
+    height: 50%; /* Esto mantendrá la proporción de la imagen */
+    border-radius: 3%;
+    border: 3px solid #c00404; /* Esto agregará un borde negro de 3px al carrusel */  
+}
+
+
