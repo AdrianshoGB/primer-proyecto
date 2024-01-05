@@ -346,3 +346,60 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
 }
 
 
+.card {
+    width: 200px; /* Ajusta el ancho a tu gusto */
+    height: 400px; /* Ajusta la altura a tu gusto */
+   border-radius: 45px;
+   overflow: hidden;
+  }
+  
+  
+  
+  .container-cards {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+  }
+  .container-cards .row {
+      flex-wrap: wrap;
+  }
+  
+  .container-cards .row .col-sm-4 .card  {
+      border-radius: 15px !important;
+      overflow: hidden !important;
+      text-align: center;
+  }
+  
+  /* Para cambiar el color de fondo de la tarjeta */
+  .container-cards .row .col-sm-4 .card {
+      background-color: #910E0E; 
+  }
+  
+  /* Para cambiar el color del texto dentro de la tarjeta */
+  .container-cards .row .col-sm-4 .card .card-body .card-text {
+      color: #FFF1C4; 
+  }
+  
+  /* Para cambiar el color de fondo y el color del texto del botón */
+  .container-cards .row .col-sm-4 .card .card-body .btn:hover {
+      background-color: #0729c4; 
+      color: #FFF1C4; 
+      background-color: #c00404;
+  
+  }
+  
+  .container-cards .row .col-sm-4 .card .card-img-top {
+      width: 100%; /* Esto hará que la imagen ocupe todo el ancho de la tarjeta */
+      height: 180px; /* Esto establece la altura de la imagen a 200px */
+      object-fit: cover; /* Esto hará que la imagen mantenga su aspecto mientras se ajusta al espacio disponible */
+  }
+  
+  .container-cards .row .col-sm-4 .card .card-body .card-title {
+      color: #FFF1C4; 
+  }
+  
+  
+
+
