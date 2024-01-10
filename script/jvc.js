@@ -1,22 +1,27 @@
-function windowOnLoad() { /* To resize the iframe : unchanged??? */
-    /* alert("servicios: onload");
-    window.parent.hs.getExpander().reflow(); */
-    var params = {};
-    alert("in windowOnLoad");
-    location.search.slice(1).split("&").forEach(function (pair) {
-        pair = pair.split("=");
-        /* alert("servicios:"+pair[0]); */
-        if (pair[0] === "oscuro") {
-            /* alert("servicios: set oscuro"); */
-            document.body.classList.add('oscuro');
-            document.body.classList.remove('claro');
-        } else if (pair[0] === "claro") {
-            /* alert("servicios: set claro"); */
-            document.body.classList.remove('oscuro');
-            document.body.classList.add('claro');
-        }
-        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-    });
+function sendComment() {
+	let name = document.getElementById('name');
+	let email = document.getElementById('email');
+	let textInput = document.getElementById('text-input');
+	let mobileNumber = 51944502272;    /* Mobile number here [currently: Joel's] */
+
+	if (name.value.trim() == "")
+    {
+		name.style.background = "lightpink";
+		name.style.border = "4px solid red";
+		alert('Por favor ingresa su nombre');
+		return false;
+	}
+	if (email.value.trim() == "")
+    {
+		email.style.background = "lightpink";
+		email.style.border = "4px solid red";
+		alert('Por favor ingresa su correo electronico');
+		return false;
+	}
+
+	let url = `https://wa.me/${mobileNumber}?text=` + "Name: " + name.value + "%0a" + "Email ID: " + email.value + "%0a" + "Message: " + textInput.value;
+
+	window.open(url, '_blank').focus();
 }
 
 /* for the carousel */
@@ -35,3 +40,4 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
