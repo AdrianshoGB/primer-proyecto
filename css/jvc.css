@@ -183,7 +183,7 @@ form_left{
     color: var(--secondary-color1);
     background:var(--primary-color1);*/
     color: var(--primary-color2);
-    background:var(--secondary-color3);
+    background: none; /* var(--secondary-color3); */
 
     font-size: 16px;
     font-weight: 400;
