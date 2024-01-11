@@ -1,9 +1,9 @@
-function sendComment() {
+/*function sendComment() {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const textInput = document.getElementById('text-input');
-    const mobileNumber = 51944502272; /* Mobile number here [currently: Joel's] */
-  
+    const mobileNumber = 51944502272; // Mobile number here [currently: Joel's]
+
     if (name.value.trim() === '') {
       name.style.background = 'lightpink';
       name.style.border = '4px solid red';
@@ -22,7 +22,7 @@ function sendComment() {
     window.open(url, '_blank').focus();
     return true;
   }
-  
+*/  
   function sendConsulta() {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
