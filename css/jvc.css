@@ -386,6 +386,12 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
   background: var(--primary-color3);
 }*/
 
+.col.nosotros-img-container img
+{
+    width:80%;
+    height:auto;
+}
+
 .carousel-item img {
     width: 100%; 
     height: 50%; 
