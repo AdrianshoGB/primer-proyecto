@@ -387,6 +387,28 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
   background: var(--primary-color3);
 }*/
 
+.row.nosotros-img-container{
+    display: flex;
+    flex-direction: row;
+    align-content:space-around;
+}
+
+.col.nosotros-img-container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col.nosotros-img-container1 img
+{
+    width:90%;
+    height:auto;
+}
+
+.col.nosotros-img-container{
+    display: flex;
+    align-items: center; /* Texto centrado verticalmente */
+}
+
 .col.nosotros-img-container img
 {
     width:80%;
