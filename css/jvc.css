@@ -366,7 +366,7 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     .col.nosotros-img-container{
         display: flex;
         flex-direction: column;
-        align-items: none;
+        /*align-items: none; INVALIDO */
     }
 }
 .col.nosotros-img-container{
@@ -493,6 +493,20 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     color: var(--secondary-color1); /* Cambia este valor al color que desees */
 }
 
+ 
+/* CSS para desktop */
+
+/* CSS para mobile */
+@media screen and (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
 /* Carousel para productos */
 .carousel-productos.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
 .carousel-productos.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
@@ -516,21 +530,38 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
 .carousel-productos.list.cat li{width:calc(100% / 6);padding:10px;}
 .carousel-productos.list.cat li .i .v span{display:none;}
 
-/* CSS para desktop */
-.servicio-card {
-    /* estilos para desktop */
-}
+/* Carousel2 para productos */
+.carousel2-productos.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
+.carousel2-productos.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
+.carousel2-productos.list li > div{border:1px solid transparent;transition:all .2s;}
+.carousel2-productos.list li a{display:block;}
+.carousel2-productos.list li .i{position:relative;}
+.carousel2-productos.list li .i figure{margin:0px;}
+.carousel2-productos.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
+.carousel2-productos.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
+.carousel2-productos.list li .i .v span:hover{padding:0px 30px;}
+.carousel2-productos.list li .i figure img{width:100%;}
+.carousel2-productos.list li .a{font-size:11px;color:var(--secondary-color1);text-align:center;padding:10px;background:var(--primary-color1);font-weight: bold;}
+.carousel2-productos.list li:hover .a{background:var(--primary-color1);color:var(--secondary-color1);}
+.carousel2-productos.list li:hover > div{border-color:var(--primary-color1);}
+.carousel2-productos.list li:hover .i .v{height:100%;}
 
-/* CSS para mobile */
-@media screen and (max-width: 768px) {
-    .servicio-card {
-        /* estilos para mobile */
-    }
-    .col-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .row {
-        flex-direction: column;
-    }
+.carousel2-productos.list.slid{margin:0px 0px 25px 0px;}
+.carousel2-productos.list.slid li{padding:0px 10px;}
+
+.carousel2-productos.list.cat{margin:-10px -10px 25px -10px;}
+.carousel2-productos.list.cat li{width:calc(100% / 6);padding:10px;}
+.carousel2-productos.list.cat li .i .v span{display:none;}
+.contenedor-img {
+    text-align: center;
+    padding: 2%;
+    background-color: var(--secondary-color2);
 }
+.imgp {
+    width: 80%;  /* 300px; */
+    height: auto; /* 400px; */
+    /*margin-right: 25px; */
+    padding: 10px;
+    border-radius: 20%;
+  }
+ 
