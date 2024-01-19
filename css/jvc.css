@@ -46,18 +46,10 @@
 }
 
 
-/* -> modo claro */
-.claro.main_div {
+.claro.main-div {
     color: var(--text-color-claro);
     background-image: url("../assets/img/Otros/ILwMb87.png");
     background-color: var(--background-color-claro);
-}
-
-/* -> modo oscuro */
-.oscuro.main_div {
-    color: var(--text-color-oscuro);
-    background-image: url("../assets/img/Otros/ILwMb87.png");
-    background-color: var(--background-color-oscuro);
 }
 
 h1 {
@@ -72,18 +64,10 @@ h2 {
 .claro .servicio-card p {
 	background-color: var(--secondary-color4);
 }
-.oscuro .servicio-card p {
-	background-color: var(--background-color-claro);
-}
 
 .claro .servicio-card h2 {
 	background-color: var(--secondary-color2); /* gris oscuro */
 	color: var(--secondary-color1);
-}
-
-.oscuro .servicio-card h2 {
-	background-color: var(--secondary-color1);
-	color: var(--secondary-color2); /* gris oscuro */
 }
 
 .img-menu-movil {
@@ -148,7 +132,7 @@ h2 {
 }
 
 /* ------------------ formularios ---------------------*/
-.boton_sendform{
+.boton-sendform{
     color: var(--button-text-color-claro);
     background-color: var(--button-color-claro);
     text-align:center;
@@ -159,17 +143,17 @@ h2 {
     padding-left: 20%;
     padding-right: 20%;
 }
-/*.boton_sendform:active {
+/*.boton-sendform:active {
     color: var(--button-text-color-claro);
     background-color: var(--button-activado-color-oscuro);
 }*/
     
-.boton_sendform:hover {
+.boton-sendform:hover {
     color: var(--button-text-color-claro);
     background-color: var(--button-color-hover-claro);
 }
 
-form_left{
+form-left{
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
@@ -178,7 +162,7 @@ form_left{
     padding-left: 0;
     left: 10px;
 }
-.label_form{
+.label-form{
     display: inline-block;
     /*
     color: var(--secondary-color1);
@@ -194,34 +178,24 @@ form_left{
 } 
 
 /* ---------------------- Botones del menu principal ----------------------*/
-.claro .boton_main_menu {
+.boton-main-menu.claro {
 color: var(--button-text-color-claro);
 background-color: var(--button-color-claro);
 }
 
-.oscuro .boton_main_menu {
-color: var(--button-text-color-oscuro);
-background-color: var(--button-color-oscuro);
-}
-
-.claro .boton_main_menu:active {
+.claro form-left:active {
 color: var(--button-text-color-oscuro);
 background-color: var(--button-activado-color-claro);
 }
 
-.oscuro .boton_main_menu:active {
+.boton-main-menu.claro:active {
 color: var(--button-text-color-claro);
 background-color: var(--button-activado-color-oscuro);
 }
 
-.claro .boton_main_menu:hover {
+.boton-main-menu.claro:hover {
 color: var(--button-text-color-claro);
 background-color: var(--button-color-hover-claro);
-}
-
-.oscuro .boton_main_menu:hover {
-color: var(--button-text-color-oscuro);
-background-color: var(--button-color-hover-oscuro);
 }
 
 /* -------------------- LOGOS -------------------- */
@@ -239,37 +213,17 @@ background-color: var(--button-color-hover-oscuro);
 	width:10.0%;
 }
 
-.logos_footer {
+.logos-footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.marca_logo{
+.marca-logo{
    width:16%; 
 }
 
-article div.p-titulo{
-    display: flex;
-    justify-content: center;
-}
-
-.p-titulo h1{
-    display:inline-block;
-    color: var(--secondary-color1);
-    font-size: 22px;
-    font-weight: 700;
-    background:var(--primary-color1); /* --secondary-color5); */
-    margin:0px;font-family:'Roboto Condensed';
-    text-transform:uppercase;
-    transform: skewX(-14deg);
-    text-align: center;
-    padding:7px 50px;
-    border-radius:4px;
-    box-shadow:inset 0px -3px 0px var(--gray-transp);
-}
-
-/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
+V/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
 #slider{font-size:0px;background:url(assets/img/Otros/aGCjIJ9.png) no-repeat center var(--secondary-color4);}
 
 #slider-img{margin:0px auto;max-width:1200px;box-shadow:0px 0px 20px var(--gray-transp);position:relative;z-index:0;overflow:hidden;}
@@ -339,6 +293,10 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
 	box-sizing:border-box;
     color: var(--secondary-color1);
 	background: var(--primary-color1);
+}
+
+.button-offerta.small{
+    transform: skew(-14deg);
 }
 
 /* Button Ribbon-Outset Border Style */
