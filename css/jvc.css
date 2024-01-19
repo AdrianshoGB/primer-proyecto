@@ -366,7 +366,7 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     .col.nosotros-img-container{
         display: flex;
         flex-direction: column;
-        align-items: none;
+        /*align-items: none; INVALIDO */
     }
 }
 .col.nosotros-img-container{
@@ -493,6 +493,20 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     color: var(--secondary-color1); /* Cambia este valor al color que desees */
 }
 
+ 
+/* CSS para desktop */
+
+/* CSS para mobile */
+@media screen and (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
 /* Carousel para productos */
 .carousel-productos.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
 .carousel-productos.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
@@ -550,4 +564,4 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     padding: 10px;
     border-radius: 20%;
   }
-  
+ 
