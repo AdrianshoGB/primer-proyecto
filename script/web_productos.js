@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-	/* slider */
+	/* slider 1 */
 	$('#slider-productos1').lightSlider({
 		adaptiveHeight:true,
-		item:6,
+		item:5,
 		slideMargin:0,
 		loop:true,
 		auto:true,
-		speed:800,
-		pause:1000*2,
+		speed:1000,
+		pause:1500,
 		controls:false,
 		pauseOnHover:true,
 		pager:false,
@@ -22,6 +22,29 @@ $(document).ready(function(){
 		]
 	});
 
+		/* slider 2 */
+		$('#slider-productos2').lightSlider({
+			adaptiveHeight:true,
+			item:3,
+			slideMargin:0,
+			loop:true,
+			auto:true,
+			speed:800,
+			pause:1500,
+			controls:false,
+			pauseOnHover:true,
+			pager:false,
+			responsive : [
+				{
+					breakpoint:470,
+					settings: {
+						item:2,
+					  }
+				}
+			]
+		});
+	
+	
 });
 
 
