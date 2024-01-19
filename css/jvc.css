@@ -476,20 +476,20 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     width: 60%; /* Ajusta este valor para cambiar el tamaño de las imágenes */
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--gray-transp);
 }
 
 .nosotros-img-container div {
-    background-color: rgb(175, 17, 17);
+    background-color: var(--primary-color1);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--gray-transp);
     text-align: center;
     max-width: 80%; /* Ajusta este valor para cambiar el ancho del texto */
     margin: 0 auto; /* Centra el texto horizontalmente */
 }
 
 .nosotros-text {
-    color: #FFF1C4; /* Cambia este valor al color que desees */
+    color: var(--secondary-color1); /* Cambia este valor al color que desees */
 }
 
