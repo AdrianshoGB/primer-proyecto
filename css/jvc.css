@@ -515,3 +515,22 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
 .carousel-productos.list.cat{margin:-10px -10px 25px -10px;}
 .carousel-productos.list.cat li{width:calc(100% / 6);padding:10px;}
 .carousel-productos.list.cat li .i .v span{display:none;}
+
+/* CSS para desktop */
+.servicio-card {
+    /* estilos para desktop */
+}
+
+/* CSS para mobile */
+@media screen and (max-width: 768px) {
+    .servicio-card {
+        /* estilos para mobile */
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
