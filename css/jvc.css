@@ -223,7 +223,7 @@ background-color: var(--button-color-hover-claro);
    width:16%; 
 }
 
-V/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
+/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
 #slider{font-size:0px;background:url(assets/img/Otros/aGCjIJ9.png) no-repeat center var(--secondary-color4);}
 
 #slider-img{margin:0px auto;max-width:1200px;box-shadow:0px 0px 20px var(--gray-transp);position:relative;z-index:0;overflow:hidden;}
@@ -237,27 +237,27 @@ V/* -------------------- CAROUSEL 1 de inicio.htm ------------------------ */
 #slider-img .slider li img{width:100%;margin:0 0px;}
 
 /* -------------------- CAROUSEL (abajo de inicio.htm)-------------------- */
-.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
-.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
-.list li > div{border:1px solid transparent;transition:all .2s;}
-.list li a{display:block;}
-.list li .i{position:relative;}
-.list li .i figure{margin:0px;}
-.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
-.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
-.list li .i .v span:hover{padding:0px 30px;}
-.list li .i figure img{width:100%;}
-.list li .a{font-size:11px;color:var(--secondary-color1);text-align:center;padding:10px;background:var(--primary-color1);font-weight: bold;}
-.list li:hover .a{background:var(--primary-color1);color:var(--secondary-color1);}
-.list li:hover > div{border-color:var(--primary-color1);}
-.list li:hover .i .v{height:100%;}
+.carousel-inicio.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
+.carousel-inicio.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
+.carousel-inicio.list li > div{border:1px solid transparent;transition:all .2s;}
+.carousel-inicio.list li a{display:block;}
+.carousel-inicio.list li .i{position:relative;}
+.carousel-inicio.list li .i figure{margin:0px;}
+.carousel-inicio.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
+.carousel-inicio.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
+.carousel-inicio.list li .i .v span:hover{padding:0px 30px;}
+.carousel-inicio.list li .i figure img{width:100%;}
+.carousel-inicio.list li .a{font-size:11px;color:var(--secondary-color1);text-align:center;padding:10px;background:var(--primary-color1);font-weight: bold;}
+.carousel-inicio.list li:hover .a{background:var(--primary-color1);color:var(--secondary-color1);}
+.carousel-inicio.list li:hover > div{border-color:var(--primary-color1);}
+.carousel-inicio.list li:hover .i .v{height:100%;}
 
-.list.slid{margin:0px 0px 25px 0px;}
-.list.slid li{padding:0px 10px;}
+.carousel-inicio.list.slid{margin:0px 0px 25px 0px;}
+.carousel-inicio.list.slid li{padding:0px 10px;}
 
-.list.cat{margin:-10px -10px 25px -10px;}
-.list.cat li{width:calc(100% / 6);padding:10px;}
-.list.cat li .i .v span{display:none;}
+.carousel-inicio.list.cat{margin:-10px -10px 25px -10px;}
+.carousel-inicio.list.cat li{width:calc(100% / 6);padding:10px;}
+.carousel-inicio.list.cat li .i .v span{display:none;}
 /* -------------------- FIN DE CAROUSEL ------------- */
 
 .img-offerta {
@@ -366,7 +366,7 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     .col.nosotros-img-container{
         display: flex;
         flex-direction: column;
-        align-items: none;
+        /*align-items: none; INVALIDO */
     }
 }
 .col.nosotros-img-container{
@@ -476,20 +476,87 @@ cf https://stackoverflow.com/questions/25445118/elongated-hexagon-shaped-button-
     width: 60%; /* Ajusta este valor para cambiar el tamaño de las imágenes */
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--gray-transp);
 }
 
 .nosotros-img-container div {
-    background-color: rgb(175, 17, 17);
+    background-color: var(--primary-color1);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--gray-transp);
     text-align: center;
     max-width: 80%; /* Ajusta este valor para cambiar el ancho del texto */
     margin: 0 auto; /* Centra el texto horizontalmente */
 }
 
 .nosotros-text {
-    color: #FFF1C4; /* Cambia este valor al color que desees */
+    color: var(--secondary-color1); /* Cambia este valor al color que desees */
 }
 
+ 
+/* CSS para desktop */
+
+/* CSS para mobile */
+@media screen and (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Carousel para productos */
+.carousel-productos.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
+.carousel-productos.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
+.carousel-productos.list li > div{border:1px solid transparent;transition:all .2s;}
+.carousel-productos.list li .i{position:relative;}
+.carousel-productos.list li .i figure{margin:0px;}
+.carousel-productos.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
+.carousel-productos.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
+.carousel-productos.list li .i .v span:hover{padding:0px 30px;}
+.carousel-productos.list li .i figure img{width:100%;}
+.carousel-productos.list li:hover > div{border-color:var(--primary-color1);}
+.carousel-productos.list li:hover .i .v{height:100%;}
+
+.carousel-productos.list.slid{margin:0px 0px 25px 0px;}
+.carousel-productos.list.slid li{padding:0px 10px;}
+
+.carousel-productos.list.cat{margin:-10px -10px 25px -10px;}
+.carousel-productos.list.cat li{width:calc(100% / 6);padding:10px;}
+.carousel-productos.list.cat li .i .v span{display:none;}
+
+/* Carousel2 para productos */
+.carousel2-productos.list{margin:-15px;padding:0px;list-style:none;font-size:0px;}
+.carousel2-productos.list li{display:inline-block;vertical-align:top;width:calc(100% / 4);padding:15px;}
+.carousel2-productos.list li > div{border:1px solid transparent;transition:all .2s;}
+.carousel2-productos.list li .i{position:relative;}
+.carousel2-productos.list li .i figure{margin:0px;}
+.carousel2-productos.list li .i .v{width:100%;height:0;background:var(--primary-color3-transp);position:absolute;text-align:center;transition:all .2s;overflow:hidden;}
+.carousel2-productos.list li .i .v span{display:inline-block;font-size:12px;color:var(--secondary-color1);border:2px solid var(--secondary-color1);line-height:30px;padding:0px 15px;top:calc(50% - 16px);position:relative;transition:all .2s;font-weight:500;text-transform:uppercase;}
+.carousel2-productos.list li .i .v span:hover{padding:0px 30px;}
+.carousel2-productos.list li .i figure img{width:100%;}
+.carousel2-productos.list li:hover .a{background:var(--primary-color1);color:var(--secondary-color1);}
+.carousel2-productos.list li:hover > div{border-color:var(--primary-color1);}
+.carousel2-productos.list li:hover .i .v{height:100%;}
+
+.carousel2-productos.list.slid{margin:0px 0px 25px 0px;}
+.carousel2-productos.list.slid li{padding:0px 10px;}
+
+.carousel2-productos.list.cat{margin:-10px -10px 25px -10px;}
+.carousel2-productos.list.cat li{width:calc(100% / 6);padding:10px;}
+.carousel2-productos.list.cat li .i .v span{display:none;}
+.contenedor-img {
+    text-align: center;
+    padding: 2%;
+    background-color: var(--secondary-color2);
+}
+.imgp {
+    width: 80%;  /* 300px; */
+    height: auto; /* 400px; */
+    /*margin-right: 25px; */
+    padding: 10px;
+    border-radius: 20%;
+  }
+ 

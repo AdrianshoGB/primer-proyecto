@@ -1,6 +1,8 @@
+/* Solamente para la pagina Productos
+
 body{
     background-color: rgb(211, 212, 208);
-}
+}*/
 
 #img-i{
     float: left; 
@@ -52,7 +54,7 @@ h2 {
 }
 .circulo {
     width: 100px;
-    height: 100px;
+    height: auto; /*100px;*/
     border-radius: 100%;
     background-color: rgb(228, 225, 227);
     display: flex;
@@ -123,6 +125,7 @@ h2 {
     align-items: center;
 }
 
+/*
 .contenedor1 {
     display: flex;
     flex-wrap: wrap;
@@ -146,14 +149,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
-.imgp {
-  width: 300px;  
-  height: 400px;
-  margin-right: 25px;
-  border-radius: 5%;
-}
 
 .texto1 {
     background-color: rgba(59, 41, 41, 0.589); /* Fondo oscuro */
@@ -165,9 +162,4 @@ h2 {
     align-items: center;
     border-radius: 10%;
     text-align: center;
-}
-.contenedor-img {
-    text-align: center;
-    padding: 50px;
-    background-color: #201f1f;
 }
